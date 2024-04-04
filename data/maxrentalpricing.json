@@ -1,0 +1,70 @@
+{
+    "rentalType": {
+        "hondaMetroScooter": {
+            "maxPersons": 1,
+            "reservationPrice": {
+                "halfDay": 20,
+                "fullDay": 30
+            },
+            "walkInPrice": {
+                "halfDay": 25,
+                "fullDay": 35
+            }
+        },
+        "hondaDioScooter": {
+            "maxPersons": 2,
+            "reservationPrice": {
+                "halfDay": 30,
+                "fullDay": 40
+            },
+            "walkInPrice": {
+                "halfDay": 35,
+                "fullDay": 45
+            }
+        },
+        "hondaPCX150Scooter": {
+            "maxPersons": 2,
+            "reservationPrice": {
+                "halfDay": 40,
+                "fullDay": 50
+            },
+            "walkInPrice": {
+                "halfDay": 45,
+                "fullDay": 55
+            }
+        },
+        "hondaPioneerATV": {
+            "maxPersons": 4,
+            "reservationPrice": {
+                "halfDay": 50,
+                "fullDay": 70
+            },
+            "walkInPrice": {
+                "halfDay": 60,
+                "fullDay": 80
+            }
+        },
+        "jeepWrangler4DoorAC": {
+            "maxPersons": 5,
+            "reservationPrice": {
+                "halfDay": 70,
+                "fullDay": 100
+            },
+            "walkInPrice": {
+                "halfDay": 85,
+                "fullDay": 125
+            }
+        },
+        "jeepWrangler2Door": {
+            "maxPersons": 4,
+            "reservationPrice": {
+                "halfDay": 60,
+                "fullDay": 85
+            },
+            "walkInPrice": {
+                "halfDay": 70,
+                "fullDay": 90
+            }
+        }
+    }
+}
