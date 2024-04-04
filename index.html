@@ -6,16 +6,105 @@
     <meta name="description" content="This page was create to offer service Rental vehicle on two physical rental locations on Cozumel ">
     <meta name="author" content="David Puche">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <meta property="og:title" content="Directory of members - São Paulo and the chamber of Secrets">
+    <meta property="og:title" content="Cozumel Rental Scoots">
     <meta property="og:type" content="website">
     <meta property="og:url" content="">
-    <meta property="og:image" content="https://dart1516.github.io/wdd230/images/Chamber-Secrets-logo.png">
-    <meta property="fb:app_id" content="2593818390695362">
+    <meta property="og:image" content="https://github.com/Dart1516/Rental-Scoots-Site/blob/main/images/logos/logo.webp">
     <meta property="og:description" content="Cozumel Scoots for rental">
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/home.css">
+    
     <title>Scoots </title>
 </head>
 <body>
-    
+    <header>
+        <div class="high-temperature-message">         
+        </div>
+    </header>
+    <nav>
+        <button id="mobile-menu" aria-label="This button is to open and close the menu on mobile view"></button>
+        <ul class="navegation-menu-bar">
+            <li> <a class="menu-option-name" href="rentals.html"></a>Rentals</li>
+            <li> <a class="menu-option-name" href="reservations.html">Reservations</a></li>
+            <li> <a class="menu-option-name" href="index.html"> <img src="images/logos/logo.webp" alt="Home image"></a>Home</li>
+            <li> <a class="menu-option-name" href="contact.html"></a>Contact Us</li>
+            <li>  <div  class="dark-mode-button-position" >
+               <img src="images/logos/button-day.webp" alt="dark mode button" id="dark-mode-button"></div></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="card">
+            <h2>Weather</h2>
+            <hr >
+            <div>
+              <div><!-- Today-->
+                  <div class="currentTimeAndWeatherType">
+                      <div>
+                          <img id="weather-icon" src="https://openweathermap.org/img/w/X.png" alt="image current day">
+                          <div class="celciusRight">
+                              <div>
+                                  <div class="celcius" id="current-temp"></div>
+                              </div>
+                          </div>
+                          <div class="anotherWeatherInfo">
+                              <div id="weather-description"></div>
+                              <div id="weather-details"></div>
+                          </div>
+                      </div>
+                      <div class="currentTimeAndWeatherType2">
+  
+                          <div id="weather-time"></div>
+                          <div id="weather-location"></div>
+                      </div>
+                  </div>
+              </div>
+              <div><!-- next 3 days -->
+                  <div class="forecastInline" id="day1">
+                      <div ></div>at 15:00
+                      <img id="img_1" src="https://openweathermap.org/img/w/X.png" alt="image first day">
+                    
+                      <div>
+                          <div class="degreeInlineDark degreeInline2">
+                              <span id="day1-max-temp"></span>
+                              <span>°C</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="forecastInline" id="day2">
+                      <div ></div> at 15:00
+                      <img id="img_2" src="https://openweathermap.org/img/w/X.png" alt="image second day">
+                      <div>
+                          <div class="degreeInlineDark degreeInline2">
+                              <span id="day2-max-temp"></span>
+                              <span>°C</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="forecastInline" id="day3">
+                      <div ></div> at 15:00
+                      <img id="img_3" src="https://openweathermap.org/img/w/X.png" alt="image third day">
+                      <div>
+                          <div class="degreeInlineDark degreeInline2">
+                              <span id="day3-max-temp"></span>
+                              <span>°C</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          </div>
+    </main>
+    <footer>
+        <hr>
+        <p>Rental Agreement</p>
+        <p>Contact Us</p>
+        <p> First Address Prolongacion Av Rafael E Melgar, INTERNACIONAL Supermanzana SSA KM 3.5, Zona Hotelera, 77675 Cozumel, Q.R., México </p>
+        <p> Second Address 5a Av. Nte. entre calle 2 norte y 4 norte, Centro, 77600 Cozumel, Q.R., México</p>
+        <p> follow us <a href="https://www.facebook.com/"><img src="images/logos/fb-logo.webp" alt="Facebook page"></a> <a href="https://www.instagram.com/"><img src="images/logos/inst-logo.webp" alt="Instagram Account"></a></p>
+        
+
+    </footer>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>
