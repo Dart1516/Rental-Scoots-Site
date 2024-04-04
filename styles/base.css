@@ -1,0 +1,67 @@
+*{
+    border: green solid;
+}
+
+/*
+colors to be use on day
+red #ab410d
+orange #dcab5e
+sand #f9ecdc
+light blue #93cadf
+blue #4bafc9
+
+colors to be use on night
+darkest blue #1b2a49
+dark blue #465881
+blue #00909e
+sand #a38288
+purple #524262
+*/
+/* start of main*/
+body{
+    background-color: #f9ecdc;
+}
+
+/*start of Hamburger Menu button*/
+.navigation-menu-bar{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation-menu-bar li{
+    flex:  1;
+    text-align: center;
+}
+
+.home-logo{
+    width: 30%;
+    height: auto;
+}
+.high-temperature-message{
+    text-align: center;
+    background-color:#ab410d ;
+}
+/*end of Hamburger Menu button*/
+/*start of Dark Mode Button */
+  
+#dark-mode-button {
+    width: 35%;
+}
+  
+.dark-mode {
+background-color: #465881;
+  }
+
+.dark-mode #dark-mode-button{
+    width: 30%;
+    margin-top: -12%;
+    margin-bottom: -12%;
+}
+
+/*end of Dark Mode Button */
+footer img{
+width: 5%;
+}
