@@ -9,7 +9,8 @@
             "walkInPrice": {
                 "halfDay": 25,
                 "fullDay": 35
-            }
+            },
+            "description": "This single-person scooter is perfect for agile city commuting."
         },
         "hondaDioScooter": {
             "maxPersons": 2,
@@ -20,7 +21,8 @@
             "walkInPrice": {
                 "halfDay": 35,
                 "fullDay": 45
-            }
+            },
+            "description": "This two-person Honda Dio scooter offers a comfortable and efficient ride."
         },
         "hondaPCX150Scooter": {
             "maxPersons": 2,
@@ -31,7 +33,8 @@
             "walkInPrice": {
                 "halfDay": 45,
                 "fullDay": 55
-            }
+            },
+            "description": "The Honda PCX150 is a versatile and powerful scooter, perfect for long rides."
         },
         "hondaPioneerATV": {
             "maxPersons": 4,
@@ -42,7 +45,8 @@
             "walkInPrice": {
                 "halfDay": 60,
                 "fullDay": 80
-            }
+            },
+            "description": "The Honda Pioneer ATV is a rugged and safe all-terrain vehicle, ideal for outdoor adventures."
         },
         "jeepWrangler4DoorAC": {
             "maxPersons": 5,
@@ -53,7 +57,8 @@
             "walkInPrice": {
                 "halfDay": 85,
                 "fullDay": 125
-            }
+            },
+            "description": "The 4-door Jeep Wrangler with air conditioning offers comfort and power on your off-road trips."
         },
         "jeepWrangler2Door": {
             "maxPersons": 4,
@@ -64,7 +69,8 @@
             "walkInPrice": {
                 "halfDay": 70,
                 "fullDay": 90
-            }
+            },
+            "description": "The 2-door Jeep Wrangler is ideal for exploring rough terrains with style and comfort."
         }
     }
 }
