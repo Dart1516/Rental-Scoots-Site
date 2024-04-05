@@ -1,3 +1,7 @@
+*{
+  border: green solid;
+}
+
 /*----------------Beginning of Weather CSS ----------------*/
 .celciusRight {
     display: inline-block;
@@ -42,7 +46,7 @@
 
 /*---------------- END OF Weather CSS ----------------*/
 
-/*start of banner image*/ 
+/*---------------------start of banner image---------------*/ 
 .banner-container {
     display: flex;
 }
@@ -60,11 +64,50 @@
 .banner-slide img {
     max-width: 100%;
     height: auto;
-    width: auto; 
+    width: 90%; 
     border-radius: 25px;
 }
+.bannerContent {
+    grid-column-start: 2;
+    border-radius: 25px;
+    padding: 20px; 
+    margin: 20px; 
+    text-align: center; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    flex: 2; /* content will width the 25% of the screen */
+  }
 
+.bannerContent h2,
+.bannerContent p {
+  margin: 10px 0; 
+}
 /*end of banner image*/
+
+/*-------Start of Cards---------*/
+.card {
+    border-width: 2px;
+    border-style: solid;
+    border-color: #740001;
+    text-align: center;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.additional-cards {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.additional-cards .card {
+    flex: 1;
+    padding: 20px;
+    margin: 0 10px;
+}
+
+/*end of Cards*/
 
 
 @media (max-width: 768px) {
@@ -86,7 +129,6 @@
   
 @media screen and (max-width: 680px) {
     .banner-slide {
-
         display: flex;
         justify-content: center;
         align-items: center;
@@ -100,5 +142,9 @@
         height: auto;
         width: auto;
         display: inline-block;
+    }
+
+    .additional-cards {
+        flex-direction: column;
     }
 }
