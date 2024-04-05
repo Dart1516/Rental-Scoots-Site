@@ -13,7 +13,7 @@
     <meta property="og:description" content="Cozumel Scoots for rental">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/reservation.css">
+    <link rel="stylesheet" href="styles/contactUs.css">
     <title>Contact Us</title>
 </head>
 <body>
@@ -35,44 +35,23 @@
         </ul>
     </nav>
     <main>
-        <div class="banner-container">
-            <div class="banner-slide">
-                <picture>
-                    <source srcset="images/playa1/7-small.webp" media="(max-width: 768px)">
-                    <source srcset="images/playa1/7-medium.webp" media="(max-width: 992px)">
-                    <source srcset="images/playa1/7-large.webp" media="(max-width: 1200px)">
-                    <img src="images/playa1/7-large.webp" alt="rotative banner" width="1278" height="800" loading="lazy">
-                  </picture>
-            </div>
-            <div class="banner-slide">
-                <picture>
-                    <source srcset="images/playa1/8-small.webp" media="(max-width: 768px)">
-                    <source srcset="images/playa1/8-medium.webp" media="(max-width: 992px)">
-                    <source srcset="images/playa1/8-large.webp" media="(max-width: 1200px)">
-                    <img src="images/playa1/8-large.webp" alt="rotative banner" width="1278" height="800" loading="lazy">
-                  </picture>
-            </div>
-            <div class="banner-slide">
-                <picture>
-                    <source srcset="images/playa1/9-small.webp" media="(max-width: 768px)">
-                    <source srcset="images/playa1/9-medium.webp" media="(max-width: 992px)">
-                    <source srcset="images/playa1/9-large.webp" media="(max-width: 1200px)">
-                    <img src="images/playa1/9-large.webp" alt="rotative banner" width="1278" height="800" loading="lazy">
-                  </picture>
-            </div>
-            <div class="banner-slide">
-                <picture>
-                    <source srcset="images/playa1/10-small.webp" media="(max-width: 768px)">
-                    <source srcset="images/playa1/10-medium.webp" media="(max-width: 992px)">
-                    <source srcset="images/playa1/10-large.webp" media="(max-width: 1200px)">
-                    <img src="images/playa1/10-large.webp" alt="rotative banner" width="1278" height="800" loading="lazy">
-                  </picture>
-            </div>
-        </div>
-        <section class="">
-            <h2> available Vehicles0</h2>
-            
-        </section>
+        <form method="get" action
+        ="thankyou.html" class="wf1">
+        <fieldset>
+          <legend>Applicant Information</legend>
+          <label> First name* <input type="text" id="fname" name="fname" autocomplete="given-name" required> </label>
+          <label> Last name* <input type="text" id="lname" name="lname" autocomplete="family-name" required> </label>
+          <label> Title or position* <input type="text" id="position" name="position" autocomplete="work" pattern="[a-zA-Z\- ]{7,}" title="Only accept alpha characters, hyphens, and spaces with a minimum of seven characters" required> </label>
+          <label >Email* <input type="email" id="email" name="email" placeholder="something@example.com" title="A valid email address." pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" autocomplete="email" required> </label>
+          <label> Phone <input type="tel" name="phone" placeholder="+55 11 123456789" autocomplete="tel" required > </label>
+          <label> Business/Organization's name <input type="text" id="oname" name="oname" autocomplete="organization-title" required> </label>
+        </fieldset>
+
+        
+        <input type="submit" value="Join us" class="color_link">
+        <input type="hidden" name="date/time" id="date-time" >
+          
+      </form>
     </main>
     <footer>
         <div class="footer-column">

@@ -8,29 +8,19 @@
                 "color1": {
                     "colorHex": "#006400",
                     "imageURL": "https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/images/vehicles/honda-motor-scooters/honda-metropolitan-(49cc)-2.avif",
+                    "id": "1",
                     "reservationPrice": {
-                        "halfDay": {
-                            "price": 20,
-                            "id": "1"
-                        },
-                        "fullDay": {
-                            "price": 30,
-                            "id": "2"
-                        }
+                        "halfDayPrice":20,
+                        "fullDayPrice": 30
                     }
                 },
                 "color2": {
                     "colorHex": "#0000FF",
                     "imageURL": "https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/images/vehicles/honda-motor-scooters/honda-metropolitan-(49cc)-1.avif",
-                    "reservationPrice": {
-                        "halfDay": {
-                            "price": 25,
-                            "id": "3"
-                        },
-                        "fullDay": {
-                            "price": 35,
-                            "id": "4"
-                        }
+                    "id": "2",
+                    "walk-in-Price": {
+                        "halfDay-price": 25,
+                        "fullDay-price": 35
                     }
                 }
             }
@@ -43,29 +33,19 @@
                 "color1": {
                     "colorHex": "#000000",
                     "imageURL": "https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/images/vehicles/honda-motor-scooters/honda-dio-110cc-2.webp",
+                    "id": "3",
                     "reservationPrice": {
-                        "halfDay": {
-                            "price": 30,
-                            "id": "5"
-                        },
-                        "fullDay": {
-                            "price": 40,
-                            "id": "6"
-                        }
+                        "halfDayPrice": 30,
+                        "fullDayPrice": 40
                     }
                 },
                 "color2": {
                     "colorHex": "#FF0000",
                     "imageURL": "https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/images/vehicles/honda-motor-scooters/honda-dio-110cc-1.webp",
-                    "reservationPrice": {
-                        "halfDay": {
-                            "price": 35,
-                            "id": "7"
-                        },
-                        "fullDay": {
-                            "price": 45,
-                            "id": "8"
-                        }
+                    "id": "4",
+                    "walk-in-Price": {
+                        "halfDayPrice": 35,
+                        "fullDayPrice": 45
                     }
                 }
             }
@@ -78,29 +58,19 @@
                 "color1": {
                     "colorHex": "#FFFFFF",
                     "imageURL": "https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/images/vehicles/honda-motor-scooters/honda-pcx150-149cc-2.webp",
+                    "id": "5",
                     "reservationPrice": {
-                        "halfDay": {
-                            "price": 40,
-                            "id": "9"
-                        },
-                        "fullDay": {
-                            "price": 50,
-                            "id": "10"
-                        }
+                        "halfDayPrice": 40,
+                        "fullDayPrice": 50
                     }
                 },
                 "color2": {
                     "colorHex": "#000000",
                     "imageURL": "https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/images/vehicles/honda-motor-scooters/honda-pcx150-149cc-1.webp",
-                    "reservationPrice": {
-                        "halfDay": {
-                            "price": 45,
-                            "id": "11"
-                        },
-                        "fullDay": {
-                            "price": 55,
-                            "id": "12"
-                        }
+                    "id": "6",
+                    "walk-in-Price": {
+                        "halfDayPrice": 45,
+                        "fullDayPrice": 55
                     }
                 }
             }
@@ -113,29 +83,19 @@
                 "color1": {
                     "colorHex": "#0000FF",
                     "imageURL": "https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/images/vehicles/honda-pioneer-1.avif",
+                    "id": "7",
                     "reservationPrice": {
-                        "halfDay": {
-                            "price": 50,
-                            "id": "13"
-                        },
-                        "fullDay": {
-                            "price": 70,
-                            "id": "14"
-                        }
+                        "halfDayPrice": 50,
+                        "fullDayPrice": 70
                     }
                 },
                 "color2": {
                     "colorHex": "#FF0000",
                     "imageURL": "https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/images/vehicles/honda-pioneer-2.avif",
-                    "reservationPrice": {
-                        "halfDay": {
-                            "price": 60,
-                            "id": "15"
-                        },
-                        "fullDay": {
-                            "price": 80,
-                            "id": "16"
-                        }
+                    "id": "8",
+                    "walk-in-Price": {
+                        "halfDayPrice": 60,
+                        "fullDayPrice": 80
                     }
                 }
             }
@@ -148,29 +108,19 @@
                 "color1": {
                     "colorHex": "#0000FF",
                     "imageURL": "https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/images/vehicles/jeep-wrangler-4-door-1.webp",
+                    "id": "9",
                     "reservationPrice": {
-                        "halfDay": {
-                            "price": 70,
-                            "id": "17"
-                        },
-                        "fullDay": {
-                            "price": 100,
-                            "id": "18"
-                        }
+                        "halfDayPrice": 70,
+                        "fullDayPrice": 100
                     }
                 },
                 "color2": {
                     "colorHex": "#00FFFF",
                     "imageURL": "https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/images/vehicles/jeep-wrangler-4-door-2.webp",
-                    "reservationPrice": {
-                        "halfDay": {
-                            "price": 85,
-                            "id": "19"
-                        },
-                        "fullDay": {
-                            "price": 125,
-                            "id": "20"
-                        }
+                    "id": "10",
+                    "walk-in-Price": {
+                        "halfDayPrice": 85,
+                        "fullDayPrice": 125
                     }
                 }
             }
@@ -183,29 +133,19 @@
                 "color1": {
                     "colorHex": "#FFFF00",
                     "imageURL": "https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/images/vehicles/jeep-wrangler-2-door-1.webp",
+                    "id": "11",
                     "reservationPrice": {
-                        "halfDay": {
-                            "price": 60,
-                            "id": "21"
-                        },
-                        "fullDay": {
-                            "price": 85,
-                            "id": "22"
-                        }
+                        "halfDayPrice": 60,
+                        "fullDayPrice": 85
                     }
                 },
                 "color2": {
                     "colorHex": "#00FFFF",
                     "imageURL": "https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/images/vehicles/jeep-wrangler-2-door-2.webp",
-                    "reservationPrice": {
-                        "halfDay": {
-                            "price": 70,
-                            "id": "23"
-                        },
-                        "fullDay": {
-                            "price": 90,
-                            "id": "24"
-                        }
+                    "id": "12",
+                    "walk-in-Price": {
+                        "halfDayPrice": 70,
+                        "fullDayPrice": 90
                     }
                 }
             }
