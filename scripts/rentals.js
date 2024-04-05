@@ -1,13 +1,14 @@
-const url4 = 'https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/data/maxrentalpricing.json';
+const url = 'https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/data/maxrentalpricing.json';
 
-async function getData(url4) {
+async function getData(url) {
     try {
-        const response = await fetch(url4);
+        const response = await fetch(url);
         return await response.json();
     } catch (error) {
         console.error('Error fetching JSON:', error);
     }
 }
+
 function displayRentalsList() {
     getData(url).then(data => {
         const rentalTypes = Object.values(data.rentalType);
@@ -18,18 +19,16 @@ function displayRentalsList() {
             const section = document.createElement('section');
             section.classList.add('rental-item');
 
-            const vehicleName = document.createElement('h2');
+            const vehicleName = document.createElement('h3');
+            vehicleName.classList.add('vehicle-name');
             vehicleName.textContent = rental.name;
             section.appendChild(vehicleName);
 
-            const hr = document.createElement('hr');
-            section.appendChild(hr);
-
             const image = document.createElement('img');
-            image.src = rental.color.color1.imageURL; // Usar la primera imagen disponible como imagen del vehículo
+            image.classList.add('vehicle-image');
+            image.src = Object.values(rental.color)[0].imageURL; // Usar la primera imagen disponible como imagen del vehículo
             const colorNames = Object.keys(rental.color).join(', ');
             image.alt = `Vehicle Image - Available Colors: ${colorNames}`;
-            image.classList.add('vehicle-image');
             image.loading = 'lazy';
             section.appendChild(image);
 
@@ -41,12 +40,20 @@ function displayRentalsList() {
             Object.entries(rental.color).forEach(([colorName, colorData]) => {
                 const colorSquare = document.createElement('div');
                 colorSquare.classList.add('color-square');
-                colorSquare.style.backgroundColor = colorData.colorHex;
+                colorSquare.style.backgroundColor = colorData.hex;
                 colorSquare.addEventListener('click', () => {
                     image.src = colorData.imageURL;
                 });
                 colorSquare.addEventListener('mouseover', () => {
                     image.src = colorData.imageURL;
+                });
+                colorSquare.addEventListener('mouseenter', () => {
+                    colorSquare.style.opacity = '0.7';
+                    document.body.style.cursor = 'pointer';
+                });
+                colorSquare.addEventListener('mouseleave', () => {
+                    colorSquare.style.opacity = '1';
+                    document.body.style.cursor = 'auto';
                 });
                 colorsBox.appendChild(colorSquare);
             });
@@ -62,7 +69,7 @@ function displayRentalsList() {
             const walkInTitle = document.createElement('h3');
             walkInTitle.textContent = 'Walk-in Price';
             walkInPrice.appendChild(walkInTitle);
-            Object.entries(rental.color.color1['walk-in-Price']).forEach(([period, price]) => {
+            Object.entries(rental.walkInPrice).forEach(([period, price]) => {
                 const priceParagraph = document.createElement('p');
                 priceParagraph.classList.add(period.toLowerCase());
                 priceParagraph.textContent = `${period} Price: $${price}`;
@@ -75,7 +82,7 @@ function displayRentalsList() {
             const reservationTitle = document.createElement('h3');
             reservationTitle.textContent = 'Reservation Price';
             reservationPrice.appendChild(reservationTitle);
-            Object.entries(rental.color.color1.reservationPrice).forEach(([period, price]) => {
+            Object.entries(rental.reservationPrice).forEach(([period, price]) => {
                 const priceParagraph = document.createElement('p');
                 priceParagraph.classList.add(period.toLowerCase());
                 priceParagraph.textContent = `${period} Price: $${price}`;
@@ -86,11 +93,12 @@ function displayRentalsList() {
             const reservationButton = document.createElement('button');
             reservationButton.classList.add('vehicleId');
             reservationButton.textContent = 'Make a Reservation';
-            reservationButton.href = 'reservations.html'; // Agregar el enlace correcto a la página de reservas
+            reservationButton.addEventListener('click', () => {
+                window.location.href = 'reservations.html'; // Redirigir al usuario a la página de reservas
+            });
             section.appendChild(reservationButton);
 
             mainDiv.appendChild(section);
-            
         });
     });
 }

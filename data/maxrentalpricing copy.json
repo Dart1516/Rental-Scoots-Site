@@ -1,152 +1,146 @@
 {
     "rentalType": {
         "hondaMetroScooter": {
-            "name": "Honda Metro Scooter",
             "maxPersons": 1,
+            "reservationPrice": {
+                "halfDay": 20,
+                "fullDay": 30
+            },
+            "walkInPrice": {
+                "halfDay": 25,
+                "fullDay": 35
+            },
             "description": "This single-person scooter is perfect for agile city commuting.",
             "color": {
-                "color1": {
-                    "colorHex": "#006400",
+                "green": {
+                    "hex": "#006400",
                     "imageURL": "https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/images/vehicles/honda-motor-scooters/honda-metropolitan-(49cc)-2.avif",
-                    "id": "1",
-                    "reservationPrice": {
-                        "halfDayPrice":20,
-                        "fullDayPrice": 30
-                    }
+                    "id":1
                 },
-                "color2": {
-                    "colorHex": "#0000FF",
+                "electricBlue": {
+                    "hex": "#0000FF",
                     "imageURL": "https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/images/vehicles/honda-motor-scooters/honda-metropolitan-(49cc)-1.avif",
-                    "id": "2",
-                    "walk-in-Price": {
-                        "halfDay-price": 25,
-                        "fullDay-price": 35
-                    }
+                    "id":2
                 }
             }
         },
         "hondaDioScooter": {
-            "name": "Honda Dio Scooter",
             "maxPersons": 2,
+            "reservationPrice": {
+                "halfDay": 30,
+                "fullDay": 40
+            },
+            "walkInPrice": {
+                "halfDay": 35,
+                "fullDay": 45
+            },
             "description": "This two-person Honda Dio scooter offers a comfortable and efficient ride.",
             "color": {
-                "color1": {
-                    "colorHex": "#000000",
+                "black": {
+                    "hex": "#000000",
                     "imageURL": "https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/images/vehicles/honda-motor-scooters/honda-dio-110cc-2.webp",
-                    "id": "3",
-                    "reservationPrice": {
-                        "halfDayPrice": 30,
-                        "fullDayPrice": 40
-                    }
+                    "id":3
                 },
-                "color2": {
-                    "colorHex": "#FF0000",
+                "red": {
+                    "hex": "#FF0000",
                     "imageURL": "https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/images/vehicles/honda-motor-scooters/honda-dio-110cc-1.webp",
-                    "id": "4",
-                    "walk-in-Price": {
-                        "halfDayPrice": 35,
-                        "fullDayPrice": 45
-                    }
+                    "id":4
                 }
             }
         },
         "hondaPCX150Scooter": {
-            "name": "Honda PCX150 Scooter",
             "maxPersons": 2,
+            "reservationPrice": {
+                "halfDay": 40,
+                "fullDay": 50
+            },
+            "walkInPrice": {
+                "halfDay": 45,
+                "fullDay": 55
+            },
             "description": "The Honda PCX150 is a versatile and powerful scooter, perfect for long rides.",
             "color": {
-                "color1": {
-                    "colorHex": "#FFFFFF",
+                "white": {
+                    "hex": "#FFFFFF",
                     "imageURL": "https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/images/vehicles/honda-motor-scooters/honda-pcx150-149cc-2.webp",
-                    "id": "5",
-                    "reservationPrice": {
-                        "halfDayPrice": 40,
-                        "fullDayPrice": 50
-                    }
+                    "id":5
                 },
-                "color2": {
-                    "colorHex": "#000000",
+                "black": {
+                    "hex": "#000000",
                     "imageURL": "https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/images/vehicles/honda-motor-scooters/honda-pcx150-149cc-1.webp",
-                    "id": "6",
-                    "walk-in-Price": {
-                        "halfDayPrice": 45,
-                        "fullDayPrice": 55
-                    }
+                    "id":6
                 }
             }
         },
         "hondaPioneerATV": {
-            "name": "Honda Pioneer ATV",
             "maxPersons": 4,
+            "reservationPrice": {
+                "halfDay": 50,
+                "fullDay": 70
+            },
+            "walkInPrice": {
+                "halfDay": 60,
+                "fullDay": 80
+            },
             "description": "The Honda Pioneer ATV is a rugged and safe all-terrain vehicle, ideal for outdoor adventures.",
             "color": {
-                "color1": {
-                    "colorHex": "#0000FF",
+                "blue": {
+                    "hex": "#0000FF",
                     "imageURL": "https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/images/vehicles/honda-pioneer-1.avif",
-                    "id": "7",
-                    "reservationPrice": {
-                        "halfDayPrice": 50,
-                        "fullDayPrice": 70
-                    }
+                    "id":7
                 },
-                "color2": {
-                    "colorHex": "#FF0000",
+                "red": {
+                    "hex": "#FF0000",
                     "imageURL": "https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/images/vehicles/honda-pioneer-2.avif",
-                    "id": "8",
-                    "walk-in-Price": {
-                        "halfDayPrice": 60,
-                        "fullDayPrice": 80
-                    }
+                    "id":8
                 }
             }
         },
         "jeepWrangler4DoorAC": {
-            "name": "Jeep Wrangler 4 Door AC",
             "maxPersons": 5,
+            "reservationPrice": {
+                "halfDay": 70,
+                "fullDay": 100
+            },
+            "walkInPrice": {
+                "halfDay": 85,
+                "fullDay": 125
+            },
             "description": "The 4-door Jeep Wrangler with air conditioning offers comfort and power on your off-road trips.",
             "color": {
-                "color1": {
-                    "colorHex": "#0000FF",
+                "blue": {
+                    "hex": "#0000FF",
                     "imageURL": "https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/images/vehicles/jeep-wrangler-4-door-1.webp",
-                    "id": "9",
-                    "reservationPrice": {
-                        "halfDayPrice": 70,
-                        "fullDayPrice": 100
-                    }
+                    "id":9
                 },
-                "color2": {
-                    "colorHex": "#00FFFF",
+                "cyan": {
+                    "hex": "#00FFFF",
                     "imageURL": "https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/images/vehicles/jeep-wrangler-4-door-2.webp",
-                    "id": "10",
-                    "walk-in-Price": {
-                        "halfDayPrice": 85,
-                        "fullDayPrice": 125
-                    }
+                    "id":10
                 }
             }
         },
         "jeepWrangler2Door": {
-            "name": "Jeep Wrangler 2 Door",
             "maxPersons": 4,
+            "reservationPrice": {
+                "halfDay": 60,
+                "fullDay": 85
+            },
+            "walkInPrice": {
+                "halfDay": 70,
+                "fullDay": 90
+            },
             "description": "The 2-door Jeep Wrangler is ideal for exploring rough terrains with style and comfort.",
             "color": {
-                "color1": {
-                    "colorHex": "#FFFF00",
+                "yellow": {
+                    "hex": "#FFFF00",
                     "imageURL": "https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/images/vehicles/jeep-wrangler-2-door-1.webp",
-                    "id": "11",
-                    "reservationPrice": {
-                        "halfDayPrice": 60,
-                        "fullDayPrice": 85
-                    }
+                    "id":11
                 },
-                "color2": {
-                    "colorHex": "#00FFFF",
+                "cyan": {
+                    "hex": "#00FFFF",
                     "imageURL": "https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/images/vehicles/jeep-wrangler-2-door-2.webp",
-                    "id": "12",
-                    "walk-in-Price": {
-                        "halfDayPrice": 70,
-                        "fullDayPrice": 90
-                    }
+                    "id":12
                 }
             }
         }
