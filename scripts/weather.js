@@ -1,4 +1,4 @@
-/*start of get today weather*/
+
 const currentTemp = document.querySelector('#current-temp');
 const todayWeatherIcon = document.querySelector('#weather-icon');
 const weatherDescription = document.querySelector('#weather-description');
@@ -7,11 +7,11 @@ const weatherTime = document.querySelector('#weather-time');
 const weatherLocation = document.querySelector('#weather-location');
 const highTemperatureMessage = document.querySelector('.high-temperature-message');
 
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=20.51&lon=-87&appid=6286d02d7f58f621f0abb16f7ade7355&units=metric';
+const url1 = 'https://api.openweathermap.org/data/2.5/weather?lat=20.51&lon=-87&appid=6286d02d7f58f621f0abb16f7ade7355&units=metric';
 
 async function apiFetch() {
     try {
-        const response = await fetch(url);
+        const response = await fetch(url1);
         if (response.ok) {
             const data = await response.json();
             displayResults(data);

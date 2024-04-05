@@ -104,8 +104,12 @@
     padding: 20px;
     margin: 0 10px;
 }
+.card #vehicle-image{
+    width: 300px;
+}
 
 /*end of Cards*/
+
 
 
 @media (max-width: 768px) {

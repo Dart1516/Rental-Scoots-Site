@@ -1,6 +1,7 @@
 {
     "rentalType": {
         "hondaMetroScooter": {
+            "name": "Honda Metro Scooter",
             "maxPersons": 1,
             "reservationPrice": {
                 "halfDay": 20,
@@ -23,6 +24,7 @@
             }
         },
         "hondaDioScooter": {
+            "name": "Honda Dio Scooter",
             "maxPersons": 2,
             "reservationPrice": {
                 "halfDay": 30,
@@ -45,6 +47,7 @@
             }
         },
         "hondaPCX150Scooter": {
+            "name": "Honda PCX150 Scooter",
             "maxPersons": 2,
             "reservationPrice": {
                 "halfDay": 40,
@@ -67,6 +70,7 @@
             }
         },
         "hondaPioneerATV": {
+            "name": "Honda Pioneer ATV",
             "maxPersons": 4,
             "reservationPrice": {
                 "halfDay": 50,
@@ -89,6 +93,7 @@
             }
         },
         "jeepWrangler4DoorAC": {
+            "name": "Jeep Wrangler 4 Door AC",
             "maxPersons": 5,
             "reservationPrice": {
                 "halfDay": 70,
@@ -111,6 +116,7 @@
             }
         },
         "jeepWrangler2Door": {
+            "name": "Jeep Wrangler 2 Door",
             "maxPersons": 4,
             "reservationPrice": {
                 "halfDay": 60,
