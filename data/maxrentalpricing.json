@@ -10,7 +10,7 @@
                     "imageURL": "https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/images/vehicles/honda-motor-scooters/honda-metropolitan-(49cc)-2.avif",
                     "id": "1",
                     "reservationPrice": {
-                        "halfDayPrice":20,
+                        "halfDayPrice": 20,
                         "fullDayPrice": 30
                     }
                 },

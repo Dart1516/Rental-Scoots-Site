@@ -1,0 +1,31 @@
+#rental-contract {
+    background-size: cover;
+    padding: 20px;
+    border: 2px solid #8B4513; /* Brown border color */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: 'Old Standard TT', serif; /* Use an appropriate font for a parchment look */
+    color: #8B4513; /* Brown text color */
+}
+
+#rental-contract h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+#rental-contract p {
+    margin-bottom: 10px;
+}
+
+#rental-contract ol {
+    padding-left: 20px;
+    list-style-type: decimal;
+}
+
+#rental-contract li {
+    margin-bottom: 10px;
+}

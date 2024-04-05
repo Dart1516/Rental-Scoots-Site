@@ -1,14 +1,13 @@
-const url = 'https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/data/maxrentalpricing.json';
+const url4 = 'https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/data/maxrentalpricing.json';
 
-async function getData(url) {
+async function getData(url4) {
     try {
-        const response = await fetch(url);
+        const response = await fetch(url4);
         return await response.json();
     } catch (error) {
         console.error('Error fetching JSON:', error);
     }
 }
-
 function displayRentalsList() {
     getData(url).then(data => {
         const rentalTypes = Object.values(data.rentalType);
@@ -27,10 +26,7 @@ function displayRentalsList() {
             section.appendChild(hr);
 
             const image = document.createElement('img');
-            // Seleccionar la primera imagen del modelo
-            const colorKeys = Object.keys(rental.color);
-            const firstColorKey = colorKeys[0];
-            image.src = rental.color[firstColorKey].imageURL;
+            image.src = rental.color.color1.imageURL; // Usar la primera imagen disponible como imagen del vehículo
             const colorNames = Object.keys(rental.color).join(', ');
             image.alt = `Vehicle Image - Available Colors: ${colorNames}`;
             image.classList.add('vehicle-image');
@@ -49,12 +45,8 @@ function displayRentalsList() {
                 colorSquare.addEventListener('click', () => {
                     image.src = colorData.imageURL;
                 });
-                colorSquare.addEventListener('mouseenter', () => {
-                    colorSquare.style.opacity = '0.8';
-                    colorSquare.style.cursor = 'pointer';
-                });
-                colorSquare.addEventListener('mouseleave', () => {
-                    colorSquare.style.opacity = '1';
+                colorSquare.addEventListener('mouseover', () => {
+                    image.src = colorData.imageURL;
                 });
                 colorsBox.appendChild(colorSquare);
             });
@@ -70,10 +62,10 @@ function displayRentalsList() {
             const walkInTitle = document.createElement('h3');
             walkInTitle.textContent = 'Walk-in Price';
             walkInPrice.appendChild(walkInTitle);
-            Object.entries(rental.color[firstColorKey].reservationPrice).forEach(([period, priceObj]) => {
+            Object.entries(rental.color.color1['walk-in-Price']).forEach(([period, price]) => {
                 const priceParagraph = document.createElement('p');
                 priceParagraph.classList.add(period.toLowerCase());
-                priceParagraph.textContent = `${period}: $${priceObj.price}`;
+                priceParagraph.textContent = `${period} Price: $${price}`;
                 walkInPrice.appendChild(priceParagraph);
             });
             section.appendChild(walkInPrice);
@@ -83,10 +75,10 @@ function displayRentalsList() {
             const reservationTitle = document.createElement('h3');
             reservationTitle.textContent = 'Reservation Price';
             reservationPrice.appendChild(reservationTitle);
-            Object.entries(rental.color[firstColorKey].reservationPrice).forEach(([period, priceObj]) => {
+            Object.entries(rental.color.color1.reservationPrice).forEach(([period, price]) => {
                 const priceParagraph = document.createElement('p');
                 priceParagraph.classList.add(period.toLowerCase());
-                priceParagraph.textContent = `${period}: $${priceObj.price}`;
+                priceParagraph.textContent = `${period} Price: $${price}`;
                 reservationPrice.appendChild(priceParagraph);
             });
             section.appendChild(reservationPrice);
@@ -94,9 +86,7 @@ function displayRentalsList() {
             const reservationButton = document.createElement('button');
             reservationButton.classList.add('vehicleId');
             reservationButton.textContent = 'Make a Reservation';
-            reservationButton.addEventListener('click', () => {
-                window.location.href = 'reservations.html';
-            });
+            reservationButton.href = 'reservations.html'; // Agregar el enlace correcto a la página de reservas
             section.appendChild(reservationButton);
 
             mainDiv.appendChild(section);
