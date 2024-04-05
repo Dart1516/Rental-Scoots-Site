@@ -16,10 +16,12 @@ function getRandomVehicle(data) {
     const colors = Object.keys(vehicle.color);
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
     const selectedColor = vehicle.color[randomColor];
+    const description = vehicle.description; // Obtener la descripción del vehículo
+    const imageURL = selectedColor.imageURL; // Obtener la URL de la imagen del vehículo
     return {
         name: vehicle.name,
-        description: vehicle.description,
-        imageURL: selectedColor.imageURL
+        description: description,
+        imageURL: imageURL
     };
 }
 

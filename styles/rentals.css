@@ -1,0 +1,28 @@
+/*--------------Start of Rental List--------------------*/
+.grid {
+	display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+	grid-gap: 5px;
+	align-items: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.grid section {
+	margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.grid section img {
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px #333;
+    width: 160px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.grid section > * {
+	margin: 0.1rem;
+}
+
+/*--------------end of Rental List--------------------*/

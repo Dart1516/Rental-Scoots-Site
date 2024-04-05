@@ -176,6 +176,7 @@ footer{
 
 .footer-column img {
     width: 10%; /* Ajusta el tamaño de los íconos de las redes sociales */
+    height: auto;
     margin-right: 10px; /* Ajusta el espacio entre los íconos de las redes sociales */
 }
 /* Estilos para el header */
