@@ -17,12 +17,11 @@ function getRandomVehicle(data) {
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
     const selectedColor = vehicle.color[randomColor];
     return {
-        name: vehicle.name, 
+        name: vehicle.name,
         description: vehicle.description,
         imageURL: selectedColor.imageURL
     };
 }
-
 
 async function displayRandomVehicle() {
     const jsonData = await getData(url);
