@@ -14,11 +14,11 @@
             "color": {
                 "green": {
                     "hex": "#006400",
-                    "imageURL": "https://github.com/Dart1516/Rental-Scoots-Site/blob/main/images/vehicles/honda-motor-scooters/honda-metropolitan-(49cc)-2.avif"
+                    "imageURL": "https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/images/vehicles/honda-motor-scooters/honda-metropolitan-(49cc)-2.avif"
                 },
                 "electricBlue": {
                     "hex": "#0000FF",
-                    "imageURL": "https://github.com/Dart1516/Rental-Scoots-Site/blob/main/images/vehicles/honda-motor-scooters/honda-metropolitan-(49cc)-1.avif"
+                    "imageURL": "https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/images/vehicles/honda-motor-scooters/honda-metropolitan-(49cc)-1.avif"
                 }
             }
         },
@@ -36,11 +36,11 @@
             "color": {
                 "black": {
                     "hex": "#000000",
-                    "imageURL": "https://github.com/Dart1516/Rental-Scoots-Site/blob/main/images/vehicles/honda-motor-scooters/honda-dio-110cc-2.webp"
+                    "imageURL": "https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/images/vehicles/honda-motor-scooters/honda-dio-110cc-2.webp"
                 },
                 "red": {
                     "hex": "#FF0000",
-                    "imageURL": "https://github.com/Dart1516/Rental-Scoots-Site/blob/main/images/vehicles/honda-motor-scooters/honda-dio-110cc-1.webp"
+                    "imageURL": "https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/images/vehicles/honda-motor-scooters/honda-dio-110cc-1.webp"
                 }
             }
         },
@@ -58,11 +58,11 @@
             "color": {
                 "white": {
                     "hex": "#FFFFFF",
-                    "imageURL": "https://github.com/Dart1516/Rental-Scoots-Site/blob/main/images/vehicles/honda-motor-scooters/honda-pcx150-149cc-1.webp"
+                    "imageURL": "https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/images/vehicles/honda-motor-scooters/honda-pcx150-149cc-2.webp"
                 },
                 "black": {
                     "hex": "#000000",
-                    "imageURL": "https://github.com/Dart1516/Rental-Scoots-Site/blob/main/images/vehicles/honda-motor-scooters/honda-pcx150-149cc-2.webp"
+                    "imageURL": "https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/images/vehicles/honda-motor-scooters/honda-pcx150-149cc-1.webp"
                 }
             }
         },
@@ -80,11 +80,11 @@
             "color": {
                 "blue": {
                     "hex": "#0000FF",
-                    "imageURL": "https://github.com/Dart1516/Rental-Scoots-Site/blob/main/images/vehicles/honda-pioneer-1.avif"
+                    "imageURL": "https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/images/vehicles/honda-pioneer-1.avif"
                 },
                 "red": {
                     "hex": "#FF0000",
-                    "imageURL": "https://github.com/Dart1516/Rental-Scoots-Site/blob/main/images/vehicles/honda-pioneer-2.avif"
+                    "imageURL": "https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/images/vehicles/honda-pioneer-2.avif"
                 }
             }
         },
@@ -102,11 +102,11 @@
             "color": {
                 "blue": {
                     "hex": "#0000FF",
-                    "imageURL": "https://github.com/Dart1516/Rental-Scoots-Site/blob/main/images/vehicles/jeep-wrangler-4-door-1.webp"
+                    "imageURL": "https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/images/vehicles/jeep-wrangler-4-door-1.webp"
                 },
                 "cyan": {
                     "hex": "#00FFFF",
-                    "imageURL": "https://github.com/Dart1516/Rental-Scoots-Site/blob/main/images/vehicles/jeep-wrangler-4-door-2.webp"
+                    "imageURL": "https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/images/vehicles/jeep-wrangler-4-door-2.webp"
                 }
             }
         },
@@ -124,11 +124,11 @@
             "color": {
                 "yellow": {
                     "hex": "#FFFF00",
-                    "imageURL": "https://github.com/Dart1516/Rental-Scoots-Site/blob/main/images/vehicles/jeep-wrangler-2-door-1.webp"
+                    "imageURL": "https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/images/vehicles/jeep-wrangler-2-door-1.webp"
                 },
                 "cyan": {
                     "hex": "#00FFFF",
-                    "imageURL": "https://github.com/Dart1516/Rental-Scoots-Site/blob/main/images/vehicles/jeep-wrangler-2-door-2.webp"
+                    "imageURL": "https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/images/vehicles/jeep-wrangler-2-door-2.webp"
                 }
             }
         }
