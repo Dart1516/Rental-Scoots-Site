@@ -10,7 +10,17 @@
                 "halfDay": 25,
                 "fullDay": 35
             },
-            "description": "This single-person scooter is perfect for agile city commuting."
+            "description": "This single-person scooter is perfect for agile city commuting.",
+            "color": {
+                "green": {
+                    "hex": "#006400",
+                    "imageURL": "https://github.com/Dart1516/Rental-Scoots-Site/blob/main/images/vehicles/honda-motor-scooters/honda-metropolitan-(49cc)-2.avif"
+                },
+                "electricBlue": {
+                    "hex": "#0000FF",
+                    "imageURL": "https://github.com/Dart1516/Rental-Scoots-Site/blob/main/images/vehicles/honda-motor-scooters/honda-metropolitan-(49cc)-1.avif"
+                }
+            }
         },
         "hondaDioScooter": {
             "maxPersons": 2,
@@ -22,7 +32,17 @@
                 "halfDay": 35,
                 "fullDay": 45
             },
-            "description": "This two-person Honda Dio scooter offers a comfortable and efficient ride."
+            "description": "This two-person Honda Dio scooter offers a comfortable and efficient ride.",
+            "color": {
+                "black": {
+                    "hex": "#000000",
+                    "imageURL": "https://github.com/Dart1516/Rental-Scoots-Site/blob/main/images/vehicles/honda-motor-scooters/honda-dio-110cc-2.webp"
+                },
+                "red": {
+                    "hex": "#FF0000",
+                    "imageURL": "https://github.com/Dart1516/Rental-Scoots-Site/blob/main/images/vehicles/honda-motor-scooters/honda-dio-110cc-1.webp"
+                }
+            }
         },
         "hondaPCX150Scooter": {
             "maxPersons": 2,
@@ -34,7 +54,17 @@
                 "halfDay": 45,
                 "fullDay": 55
             },
-            "description": "The Honda PCX150 is a versatile and powerful scooter, perfect for long rides."
+            "description": "The Honda PCX150 is a versatile and powerful scooter, perfect for long rides.",
+            "color": {
+                "white": {
+                    "hex": "#FFFFFF",
+                    "imageURL": "https://github.com/Dart1516/Rental-Scoots-Site/blob/main/images/vehicles/honda-motor-scooters/honda-pcx150-149cc-1.webp"
+                },
+                "black": {
+                    "hex": "#000000",
+                    "imageURL": "https://github.com/Dart1516/Rental-Scoots-Site/blob/main/images/vehicles/honda-motor-scooters/honda-pcx150-149cc-2.webp"
+                }
+            }
         },
         "hondaPioneerATV": {
             "maxPersons": 4,
@@ -46,7 +76,17 @@
                 "halfDay": 60,
                 "fullDay": 80
             },
-            "description": "The Honda Pioneer ATV is a rugged and safe all-terrain vehicle, ideal for outdoor adventures."
+            "description": "The Honda Pioneer ATV is a rugged and safe all-terrain vehicle, ideal for outdoor adventures.",
+            "color": {
+                "blue": {
+                    "hex": "#0000FF",
+                    "imageURL": "https://github.com/Dart1516/Rental-Scoots-Site/blob/main/images/vehicles/honda-pioneer-1.avif"
+                },
+                "red": {
+                    "hex": "#FF0000",
+                    "imageURL": "https://github.com/Dart1516/Rental-Scoots-Site/blob/main/images/vehicles/honda-pioneer-2.avif"
+                }
+            }
         },
         "jeepWrangler4DoorAC": {
             "maxPersons": 5,
@@ -58,7 +98,17 @@
                 "halfDay": 85,
                 "fullDay": 125
             },
-            "description": "The 4-door Jeep Wrangler with air conditioning offers comfort and power on your off-road trips."
+            "description": "The 4-door Jeep Wrangler with air conditioning offers comfort and power on your off-road trips.",
+            "color": {
+                "blue": {
+                    "hex": "#0000FF",
+                    "imageURL": "https://github.com/Dart1516/Rental-Scoots-Site/blob/main/images/vehicles/jeep-wrangler-4-door-1.webp"
+                },
+                "cyan": {
+                    "hex": "#00FFFF",
+                    "imageURL": "https://github.com/Dart1516/Rental-Scoots-Site/blob/main/images/vehicles/jeep-wrangler-4-door-2.webp"
+                }
+            }
         },
         "jeepWrangler2Door": {
             "maxPersons": 4,
@@ -70,7 +120,17 @@
                 "halfDay": 70,
                 "fullDay": 90
             },
-            "description": "The 2-door Jeep Wrangler is ideal for exploring rough terrains with style and comfort."
+            "description": "The 2-door Jeep Wrangler is ideal for exploring rough terrains with style and comfort.",
+            "color": {
+                "yellow": {
+                    "hex": "#FFFF00",
+                    "imageURL": "https://github.com/Dart1516/Rental-Scoots-Site/blob/main/images/vehicles/jeep-wrangler-2-door-1.webp"
+                },
+                "cyan": {
+                    "hex": "#00FFFF",
+                    "imageURL": "https://github.com/Dart1516/Rental-Scoots-Site/blob/main/images/vehicles/jeep-wrangler-2-door-2.webp"
+                }
+            }
         }
     }
 }
