@@ -1,67 +1,258 @@
-*{
-    border: green solid;
-}
+
 
 /*
-colors to be use on day
-red #ab410d
-orange #dcab5e
-sand #f9ecdc
-light blue #93cadf
-blue #4bafc9
+Colors to be used during the day:
+Red #ab410d
+Orange #dcab5e
+Sand #f9ecdc
+Light Blue #93cadf
+Blue #4bafc9
 
-colors to be use on night
-darkest blue #1b2a49
-dark blue #465881
-blue #00909e
-sand #a38288
-purple #524262
+Colors to be used during the night:
+Darkest Blue #1b2a49
+Dark Blue #465881
+Blue #00909e
+Sand #a38288
+Purple #524262
 */
-/* start of main*/
-body{
-    background-color: #f9ecdc;
-}
 
-/*start of Hamburger Menu button*/
-.navigation-menu-bar{
+/* Start of main code*/
+body {
+    background-color: #f9ecdc;
+    color: #1b2a49;
+}
+/* End of main code  */
+
+/* things that affect both, mobile and desktop view */
+#mobile-menu { /* to hide the borders and a space that appear*/
+    border: none;
+    padding: 0;
+}
+.navigation-menu-bar { /*navigation bar color*/
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.navigation-menu-bar li{
-    flex:  1;
-    text-align: center;
+    
 }
 
-.home-logo{
-    width: 30%;
+.navigation-menu-bar li { /*text of navigation bar*/
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    background-color: #93cadf;
+    
+    border-style: solid;  
+    border-radius: 20px; /* Ajusta según sea necesario */
+    padding: 20px;
+}
+.navigation-menu-bar li a {
+    color: black;
+    font-weight: 700;
+    text-decoration: none; /* Quita la subrayado del enlace */
+    transition: color 0.3s; /* Transición suave para el cambio de color del texto */
+}
+
+.navigation-menu-bar li:hover { /* hover of navigation */
+    background-color: #00909e; 
+}
+
+.navigation-menu-bar li a:hover {
+    color: #a38288; /* text hover */
+}
+
+/* things that affect both, mobile and desktop view */
+
+/*desktop view*/
+.home-logo {
+    width: 50%;
     height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    margin: -10%;
 }
-.high-temperature-message{
+
+.high-temperature-message {
     text-align: center;
-    background-color:#ab410d ;
+    background-color: #ab410d;
 }
-/*end of Hamburger Menu button*/
-/*start of Dark Mode Button */
-  
+.logo-mobile img{
+    display: none;
+}
+.dark-mode-logo {
+    display: none;
+}
+.menu-option-logo {
+    font-size: 0; /* Hace que el texto sea invisible */
+}
+
+/* End of Hamburger Menu button */
+
+/* Start of Dark Mode Button */
 #dark-mode-button {
-    width: 35%;
+    width: 40%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    margin: -20%;
 }
-  
+
 .dark-mode {
-background-color: #465881;
-  }
-
-.dark-mode #dark-mode-button{
-    width: 30%;
-    margin-top: -12%;
-    margin-bottom: -12%;
+    background-color: #465881;
+    color: #a38288;
 }
 
-/*end of Dark Mode Button */
-footer img{
-width: 5%;
+.dark-mode #dark-mode-button {
+    width: 40%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    margin: -20%;
+}
+.dark-mode #dark-mode-button {
+color: black;
+}
+
+.dark-mode #dark-mode-button {
+color: black;
+
+}
+.dark-mode .navigation-menu-bar li {
+background-color: #a38288;
+}
+
+
+.dark-mode .navigation-menu-bar li {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    background-color: #a38288;
+    transition: background-color 0.3s; /* Transición suave para el cambio de color */
+}
+
+.dark-mode .navigation-menu-bar li:hover {
+    background-color: #00909e; /* Cambio de color al pasar el mouse */
+}
+
+.dark-mode .navigation-menu-bar li a {
+    color: white;
+    text-decoration: none; /* Quita la subrayado del enlace */
+    transition: color 0.3s; /* Transición suave para el cambio de color del texto */
+}
+
+.dark-mode .navigation-menu-bar li a:hover {
+    color: #a38288; /* Cambio de color del texto al pasar el mouse */
+}
+.dark-mode footer {
+    color: white; 
+    background-color: #a38288 ;
+}
+
+/* End of Dark Mode Button */
+
+footer{
+    background-color: #93cadf;
+    color: black;
+    font-weight: 100;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Cambiado a 1fr */
+    justify-content: space-between;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-column {
+    margin-right: 20px; /* Ajusta el espacio entre las columnas */
+}
+
+.footer-column p {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+
+
+.footer-column img {
+    width: 10%; /* Ajusta el tamaño de los íconos de las redes sociales */
+    margin-right: 10px; /* Ajusta el espacio entre los íconos de las redes sociales */
+}
+/* Estilos para el header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos para el navbar-header */
+.navbar-header {
+    display: flex;
+    align-items: center; /* Alinea los elementos verticalmente */
+}
+
+
+@media screen and (max-width: 768px) {
+
+    header div{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .dark-mode-logo {
+        display: flex;
+        max-width: 100px; /* Máximo ancho permitido */
+        max-height: 100px; /* Máximo alto permitido */
+        margin-right: -25PX;
+    }
+
+    .logo-mobile img {
+        display: flex;
+        margin-left: 5%;
+        max-width: 100px; /* Máximo ancho permitido */
+        max-height: 100px; /* Máximo alto permitido */
+    }
+
+    #mobile-menu {
+        font-size: 2.5rem;
+        background-color: transparent;
+        margin-right: 5%;
+    }
+
+    #mobile-menu.open::before {
+        content: "X";
+        color: black;
+    }
+    #mobile-menu::before {
+        content: "☰";
+        color: black;
+    }
+
+    /*hide the desktop menu on mobile*/
+    .navigation-menu-bar {
+        display: none;
+    }
+    .open {
+        display: block;
+    }
+
+    /*remove the  desktop logos*/
+    .dark-mode-button-on-desktop,
+    .navigation-menu-bar>li>a>img {
+        display: none;
+    }
+    footer {
+        grid-template-columns: 2fr repeat(auto-fit, minmax(180px, 1fr)); /* La primera columna toma 2fr */
+    }
+    .menu-option-logo {
+        font-size: 16px; /* Hace que el texto sea invisible */
+    }
+
+}
+
+
+@media (max-width: 767px) { /* Cambios para tamaños de pantalla de teléfono */
+    footer {
+        grid-template-columns: 1fr; /* Cambia a una columna en pantallas pequeñas */
+    }
 }

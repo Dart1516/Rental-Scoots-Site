@@ -1,0 +1,113 @@
+/*This is for Mobile Menu*/
+
+
+
+header.navbar.container .navbar-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+header.navbar.container .navbar-header .logo {
+  left: auto;
+  z-index: 1;
+  margin: 0 auto;
+  transform: none;
+}
+
+header.navbar.container .navbar-header .navbar-toggle {
+  display: inline-block;
+  z-index: 1;
+  float: left;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #00688c;
+  font-size: 50px;
+}
+/*esto es lo que hace que desaparezca on  mobile. */
+header.navbar.container nav > .menu {
+  display: none;
+}
+
+.navbar-toggle::before {
+  content: '\2716';
+}
+
+.search::before {
+  content: '\1F50D';
+}
+
+.mobile-menu {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+
+/*END OF Mobile Menu*/
+
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 992px) {
+  header.navbar.container {
+    transition: all 0.25s;
+    background-color: white;
+    border: 0;
+    font-family: "Gill Sans", sans-serif;
+    max-width: 1920px;
+    position: relative;
+    text-transform: uppercase;
+    width: 100%;
+    z-index: 100;
+  }
+  
+  header.navbar.container .navbar-nav > li {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    float: none;
+    font-size: 16px;
+  }
+  
+
+  header.navbar.container .navbar-nav>li>a,
+  header.navbar.container .navbar-nav>li>button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header.navbar.container nav>.menu {
+    display: flex;
+    align-items: stretch;
+    height: 160px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  header.navbar.container {
+    box-shadow: 10px 7px 30px -10px rgba(51, 51, 51, 0.5);
+    height: auto;
+    padding: 0;
+    position: fixed;
+    top: 0;
+  }
+  header.navbar.container .navbar-header .navbar-toggle {
+    display: none;
+  }
+  header.navbar.container .navbar-header .logo {
+    display: none;
+  }
+  header.navbar.container .navbar-header .search {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {}
+@media (min-width: 480px) {}

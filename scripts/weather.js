@@ -30,7 +30,7 @@ function displayResults(data) {
     currentTemp.innerHTML = `${data.main.temp.toFixed(0)}&deg;C`;
     todayWeatherIcon.setAttribute('src', `https://openweathermap.org/img/w/${data.weather[0].icon}.png`);
     todayWeatherIcon.setAttribute('alt', data.weather[0].description);
-    weatherDescription.textContent = data.weather[0].icon.charAt(0).toUpperCase() + data.weather[0].icon.slice(1);
+    weatherDescription.textContent = data.weather[0].description.charAt(0).toUpperCase() + data.weather[0].description.slice(1);
     weatherDetails.innerHTML = `Chance of precipitation: ${data.clouds.all}%<br>Humidity: ${data.main.humidity}%<br>Wind: ${data.wind.speed} km/h <br>`;
     const date = new Date(data.dt * 1000);
     const options = { weekday: 'long', hour: 'numeric', minute: 'numeric', hour12: true };
