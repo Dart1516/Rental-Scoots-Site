@@ -34,12 +34,54 @@
                <img src="images/logos/button-night.webp" alt="dark mode button" id="dark-mode-button"> </li>
         </ul>
     </nav>
-    <main>
+    <main >
 
-        <section class="">
-            <h2> Page is under construction</h2>
-            
-        </section>
+        <div class="form to select a vehicle"> izquierda
+            <h2>Make your request</h2>
+            <hr>
+
+              <fieldset>
+                <legend> Vehicle Select </legend>
+                <div>Select The color </div>
+                <label ><input type="radio" name="audience" value="color1"> Color 1 </label>
+                <label ><input type="radio" name="audience" value="color2"> Color 2 </label>
+        
+                <label>   
+                    <select name="Subject">
+                      <option value="">Please Select &#9662; </option>     <!-- the number is to appear the arrow -->
+                      <option value="software"> Vehicle 1 </option>
+                      <option value="creative"> Vehicle 1 </option>
+                      <option value="info"> Vehicle 1 </option>
+                      <option value="data"> Vehicle 1 </option>
+                      <option value="construction"> Vehicle 1 </option>
+                      <option value="manufacturing"> Vehicle 1 </option>
+                      <option value="business"> Vehicle 1 </option>
+                      <option value="security"> Vehicle 1 </option>
+                    </select>
+                  </label>
+                <div>Select the reservation type </div>
+                <label ><input type="radio" name="audience" value="opion1"> Half Day </label>
+                <label ><input type="radio" name="audience" value="option2"> Full Day </label>
+                <label> Day of reservation <input type="date" name="completeDate"></label>
+              </fieldset>
+
+              <fieldset>
+                <legend>User Information</legend>
+                <label> Full Name* <input type="text" autocomplete="fname" name="name" id="firstName" required /> </label>
+                <label> Phone <input type="tel" name="phone" placeholder="123456789" /> </label>
+                <label> Email* <input type="email" name="email" placeholder="someEmail@something.com" /> </label>
+                <label> country <input type="country" name="country" placeholder="Your country" /> </label>
+              </fieldset>
+              <fieldset>
+                <legend>additional information</legend>
+                <label for="businessDescription">Describe your issue question our doubt:</label>
+                <textarea id="businessDescription" name="text box" placeholder="special accommodations/comments such as the need and location of a drop-off request."></textarea>
+            </fieldset>
+        
+        </div>
+        <div class="image-of-my-selected-vehicle">
+derecha
+        </div>
     </main>
     <footer>
         <div class="footer-column">

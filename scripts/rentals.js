@@ -24,6 +24,9 @@ function displayRentalsList() {
             vehicleName.textContent = rental.name;
             section.appendChild(vehicleName);
 
+            const hr = document.createElement('hr');
+            section.appendChild(hr);
+
             const image = document.createElement('img');
             image.classList.add('vehicle-image');
             image.src = Object.values(rental.color)[0].imageURL; // Usar la primera imagen disponible como imagen del vehículo
@@ -41,20 +44,29 @@ function displayRentalsList() {
                 const colorSquare = document.createElement('div');
                 colorSquare.classList.add('color-square');
                 colorSquare.style.backgroundColor = colorData.hex;
+
+                // Event listener para cambiar la imagen al hacer clic en un color
                 colorSquare.addEventListener('click', () => {
                     image.src = colorData.imageURL;
                 });
+
+                // Event listener para cambiar la imagen al pasar el mouse sobre un color
                 colorSquare.addEventListener('mouseover', () => {
                     image.src = colorData.imageURL;
                 });
+
+                // Event listener para el efecto de sombreado al pasar el mouse sobre un color
                 colorSquare.addEventListener('mouseenter', () => {
                     colorSquare.style.opacity = '0.7';
                     document.body.style.cursor = 'pointer';
                 });
+
+                // Event listener para eliminar el sombreado al dejar de pasar el mouse sobre un color
                 colorSquare.addEventListener('mouseleave', () => {
                     colorSquare.style.opacity = '1';
                     document.body.style.cursor = 'auto';
                 });
+
                 colorsBox.appendChild(colorSquare);
             });
             section.appendChild(colorsBox);
@@ -64,6 +76,7 @@ function displayRentalsList() {
             quantityPeople.textContent = `Max Persons: ${rental.maxPersons}`;
             section.appendChild(quantityPeople);
 
+            // Agregar el precio para caminar
             const walkInPrice = document.createElement('div');
             walkInPrice.classList.add('walkin-price');
             const walkInTitle = document.createElement('h3');
@@ -77,6 +90,7 @@ function displayRentalsList() {
             });
             section.appendChild(walkInPrice);
 
+            // Agregar el precio de reserva
             const reservationPrice = document.createElement('div');
             reservationPrice.classList.add('reservation-price');
             const reservationTitle = document.createElement('h3');
@@ -90,6 +104,7 @@ function displayRentalsList() {
             });
             section.appendChild(reservationPrice);
 
+            // Agregar botón de reserva
             const reservationButton = document.createElement('button');
             reservationButton.classList.add('vehicleId');
             reservationButton.textContent = 'Make a Reservation';
@@ -102,5 +117,6 @@ function displayRentalsList() {
         });
     });
 }
+
 
 displayRentalsList();
