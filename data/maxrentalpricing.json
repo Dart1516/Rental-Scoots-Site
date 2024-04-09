@@ -14,12 +14,12 @@
             "color": {
                 "green": {
                     "hex": "#006400",
-                    "imageURL": "https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/images/vehicles/honda-motor-scooters/honda-metropolitan-(49cc)-2.avif",
+                    "imageURL": "https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/images/vehicles/honda-motor-scooters/honda-metropolitan-(49cc)-2.webp",
                     "id":1
                 },
                 "electricBlue": {
                     "hex": "#0000FF",
-                    "imageURL": "https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/images/vehicles/honda-motor-scooters/honda-metropolitan-(49cc)-1.avif",
+                    "imageURL": "https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/images/vehicles/honda-motor-scooters/honda-metropolitan-(49cc)-1.webp",
                     "id":2
                 }
             }
@@ -86,12 +86,12 @@
             "color": {
                 "blue": {
                     "hex": "#0000FF",
-                    "imageURL": "https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/images/vehicles/honda-pioneer-1.avif",
+                    "imageURL": "https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/images/vehicles/honda-pioneer-1.webp",
                     "id":7
                 },
                 "red": {
                     "hex": "#FF0000",
-                    "imageURL": "https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/images/vehicles/honda-pioneer-2.avif",
+                    "imageURL": "https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/images/vehicles/honda-pioneer-2.webp",
                     "id":8
                 }
             }
