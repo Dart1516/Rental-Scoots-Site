@@ -30,6 +30,9 @@ function displayResults(data) {
     currentTemp.innerHTML = `${data.main.temp.toFixed(0)}&deg;C`;
     todayWeatherIcon.setAttribute('src', `https://openweathermap.org/img/w/${data.weather[0].icon}.png`);
     todayWeatherIcon.setAttribute('alt', data.weather[0].description);
+    // Agregar ancho y alto a la imagen
+    todayWeatherIcon.setAttribute('width', '50'); // Por ejemplo, 50px
+    todayWeatherIcon.setAttribute('height', '50'); // Por ejemplo, 50px
     weatherDescription.textContent = data.weather[0].description.charAt(0).toUpperCase() + data.weather[0].description.slice(1);
     weatherDetails.innerHTML = `Chance of precipitation: ${data.clouds.all}%<br>Humidity: ${data.main.humidity}%<br>Wind: ${data.wind.speed} km/h <br>`;
     const date = new Date(data.dt * 1000);
@@ -37,7 +40,6 @@ function displayResults(data) {
     weatherTime.textContent = date.toLocaleString('en-US', options);
     weatherLocation.textContent = data.name;
 }
-
 function displayMaxTemperature(data) {
     const maxTemp = data.main.temp_max.toFixed(0);
     highTemperatureMessage.innerHTML = `Max Temperature Today: ${maxTemp}&deg;C <button onclick="closeMessage()">X</button>`;
@@ -100,9 +102,14 @@ function displayForecastResults(data) {
         const dayOfWeekNumber = dateObj.getDay(); // Obtiene el día de la semana como número
         currentDayElement.querySelector('div').textContent = daysOfWeek[dayOfWeekNumber]; // Actualiza el nombre del día
         currentDayElement.querySelector('#day' + (forecastDay + 1) + '-max-temp').textContent = maxTemp.toFixed(0); // Actualiza la temperatura máxima
-        currentDayElement.querySelector('#img_' + (forecastDay + 1)).setAttribute('src', weatherIcon); // Actualiza el icono del clima
+        const weatherIconImg = currentDayElement.querySelector('#img_' + (forecastDay + 1));
+        weatherIconImg.setAttribute('src', weatherIcon); // Actualiza el icono del clima
+        // Agregar ancho y alto a la imagen
+        weatherIconImg.setAttribute('width', '50'); // Por ejemplo, 50px
+        weatherIconImg.setAttribute('height', '50'); // Por ejemplo, 50px
     }
 }
+
 
 
 

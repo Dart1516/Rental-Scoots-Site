@@ -103,6 +103,7 @@
     flex: 1;
     padding: 20px;
     margin: 0 10px;
+    margin-bottom: 20px;
 }
 .card #vehicle-image{
     width: 300px;
@@ -130,6 +131,7 @@
     .banner-slide img {
         margin-right: 3%;
     }
+
   }
   
 @media screen and (max-width: 680px) {
@@ -154,5 +156,8 @@
     }
     .banner-slide img {
         width: 90%;
+    }
+    .card {
+        padding-bottom: 10000px;
     }
 }
