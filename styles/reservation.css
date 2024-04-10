@@ -130,11 +130,15 @@ pattern="[0-9]+([ -]?[0-9]+)""
 #vehicle-info .parrafos {
     display: flex; /* Crea un contenedor flex para los párrafos */
     justify-content: space-around; /* Distribuye los párrafos uniformemente */
-    width: 100%; /* Ajusta el ancho del contenedor flex al 100% */
+    align-items: center;
     font-size: larger;
     font-weight: bold;
+}
+#vehicle-info .parrafos p{
+    font-size: xx-large;
 
 }
+
 
 #vehicle-info .parrafos p {
     width: calc(50% - 20px); /* Establece el ancho de los párrafos al 50% del contenedor menos el espacio entre ellos */
@@ -173,3 +177,79 @@ pattern="[0-9]+([ -]?[0-9]+)""
 #rental-contract li {
     margin-bottom: 10px;
 }
+
+
+/*
+const url = 'https://raw.githubusercontent.com/Dart1516/Rental-Scoots-Site/main/data/maxrentalpricing.json';
+
+async function getData(url) {
+    try {
+        const response = await fetch(url);
+        return await response.json(); 
+    } catch (error) {
+        console.error('Error fetching JSON:', error); 
+    }
+}
+
+// for doing the first vehicle appear
+document.addEventListener("DOMContentLoaded", async function() {    
+    // Select the first vehicle option by default
+    const firstVehicleOption = document.querySelector('#vehicle-description option:nth-child(2)');
+    firstVehicleOption.selected = true;
+    
+    // Dispatch a 'change' event to display information of the default selected vehicle
+    const changeEvent = new Event('change');
+    document.getElementById('vehicle-description').dispatchEvent(changeEvent);
+});
+
+// Event listener for the 'change' event of the vehicle description dropdown
+document.getElementById('vehicle-description').addEventListener('change', async function() {
+    // Get the selected vehicle ID
+    const selectedVehicleId = this.value;
+    if (selectedVehicleId) {
+        const data = await getData(url);
+        const selectedVehicle = data.rentalType[selectedVehicleId];
+        if (selectedVehicle) {
+            // Extract color key
+            const colorKey = Object.keys(selectedVehicle.color)[0];
+            const currentPrice= selectedVehicle.reservationPrice.halfDay
+            // Display vehicle information
+            const vehicleInfo = document.getElementById('vehicle-info');
+            vehicleInfo.innerHTML = `
+                <img src="${selectedVehicle.color[colorKey].imageURL}" alt="${selectedVehicleId}">
+                <p>Description: ${selectedVehicle.description}</p>
+                <div class="parrafos">
+                <h4>Max Persons:</h4>
+                <p>${selectedVehicle.maxPersons}</p>
+                <h4 id="reservationPrice">Reservation Price: </h4>
+                <p>$${currentPrice}</p>
+                <div/>
+            `;
+            // Event listener for reservation type selection
+            document.querySelectorAll('input[name="reservation"]').forEach((radio) => {
+                radio.addEventListener('change', () => {
+                    // Update reservation price based on selected reservation type
+                    if (radio.value === 'halfDay') {
+                        currentPrice = `$${selectedVehicle.reservationPrice.halfDay}`;
+                    } else {
+                        currentPrice = `$${selectedVehicle.reservationPrice.fullDay}`;
+                    }
+                });
+            });
+            // Event listener for quantity of days selection
+            document.getElementById('quantityDays').addEventListener('change', () => {
+                const quantityDays = document.getElementById('quantityDays').value;
+                const reservationType = document.querySelector('input[name="reservation"]:checked').value;                if (quantityDays && reservationType) {
+                    // Calculate total price based on reservation type and quantity of days
+                    const reservationPrice = reservationType === 'halfDay' ? selectedVehicle.reservationPrice.halfDay : selectedVehicle.reservationPrice.fullDay;
+                    const totalPrice = reservationPrice * parseInt(quantityDays);
+                    currentPrice = `$${totalPrice}`;
+                }
+            });
+        } else {
+            console.error('Vehicle data not found.');
+        }
+    }
+});
+
+*/

@@ -34,10 +34,12 @@ document.getElementById('vehicle-description').addEventListener('change', async 
             const vehicleInfo = document.getElementById('vehicle-info');
             vehicleInfo.innerHTML = `
                 <img src="${selectedVehicle.color[colorKey].imageURL}" alt="${selectedVehicleId}">
-                <p>Description: ${selectedVehicle.description}</p>
+                <p>${selectedVehicle.description}</p>
                 <div class="parrafos">
-                <p>Max Persons: ${selectedVehicle.maxPersons}</p>
-                <p id="reservationPrice">Reservation Price: $${selectedVehicle.reservationPrice.halfDay}</p>
+                <h4>Max Persons:</h4>
+                <p>${selectedVehicle.maxPersons}</p>
+                <h4 >Reservation Price: </h4>
+                <p id="reservationPrice">$${selectedVehicle.reservationPrice.halfDay}</p>
                 <div/>
             `;
             // Event listener for reservation type selection
@@ -46,9 +48,9 @@ document.getElementById('vehicle-description').addEventListener('change', async 
                     const priceElement = document.getElementById('reservationPrice');
                     // Update reservation price based on selected reservation type
                     if (radio.value === 'halfDay') {
-                        priceElement.textContent = `Reservation Price: $${selectedVehicle.reservationPrice.halfDay}`;
+                        priceElement.textContent = `$${selectedVehicle.reservationPrice.halfDay}`;
                     } else {
-                        priceElement.textContent = `Reservation Price: $${selectedVehicle.reservationPrice.fullDay}`;
+                        priceElement.textContent = `$${selectedVehicle.reservationPrice.fullDay}`;
                     }
                 });
             });
@@ -61,7 +63,7 @@ document.getElementById('vehicle-description').addEventListener('change', async 
                     // Calculate total price based on reservation type and quantity of days
                     const reservationPrice = reservationType === 'halfDay' ? selectedVehicle.reservationPrice.halfDay : selectedVehicle.reservationPrice.fullDay;
                     const totalPrice = reservationPrice * parseInt(quantityDays);
-                    priceElement.textContent = `Reservation Price: $${totalPrice}`;
+                    priceElement.textContent = `$${totalPrice}`;
                 }
             });
         } else {
