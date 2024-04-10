@@ -43,8 +43,8 @@
                 <fieldset>
                     <legend> Vehicle Selection </legend>
                     <div>
-                        <label for="vehicle">Vehicle model
-                            <select for="vehicle" name="vehicle-description" id="vehicle-description">
+                        <label >Vehicle model
+                            <select  name="vehicle-description" id="vehicle-description">
                                 <option value="">Please Select &#9662;</option>
                                 <option value="hondaDioScooter">Honda Dio 110cc Black &#9662;</option>
                                 <option value="hondaMetroScooter">Honda Metropolitan 49cc Green</option>
@@ -58,11 +58,11 @@
                         
                     </div>
                     <div>
-                        <label for="reservation">Select the reservation type</label>
+                        <label >Select the reservation type</label>
                         <input type="radio" name="reservation" value="halfDay" id="halfDay"> Half Day
                         <input type="radio" name="reservation" value="fullDay" id="fullDay"> Full Day
-                        <label for="calendar">Date of reservation <input type="date" name="completeDate" id="calendar"></label>
-                        <label for="period">How many days
+                        <label >Date of reservation <input type="date" name="completeDate" id="calendar"></label>
+                        <label >How many days
                             <select name="quantity-days" id="quantityDays">
                                 <option value="">Please Select &#9662;</option>
                                 <option value="1">1</option>
@@ -74,7 +74,7 @@
                         </label>
                     </div>
                     <div>
-                        <label for="cruise">Mention the color and the Cruise Line if applicable
+                        <label >Mention the color and the Cruise Line if applicable
                             <textarea id="cruise-line" name="text box" placeholder="Color Blue and cruise line."></textarea>
                         </label>
                     </div>
@@ -83,14 +83,14 @@
     
                   <fieldset>
                     <legend>User Information</legend>
-                    <label> Full Name* <input type="text" class="fullName" autocomplete="fname" name="name" required pattern="[A-Za-z]*"> </label>
-                    <label> Phone* <input type="tel" class="phone" name="phone" placeholder="123456789 " required pattern="[0-9]+([ -]?[0-9]+)*"> </label>
-                    <label> Email* <input type="email" class="email" name="email" placeholder="someEmail@something.com" required> </label>
+                    <label> Full Name* <input type="text" class="fullName" autocomplete="name" name="name" placeholder="Your Full Name" title="Write your Full name" required required pattern="[A-Za-z\s]+" > </label>
+                    <label> Phone* <input type="tel" class="phone" name="phone" placeholder="123456789" title="Input your phone number (only numbers, spaces, +, and - allowed)" required > </label>
+                    <label> Email* <input type="email" class="email" name="email" placeholder="someEmail@something.com" title="Write your best email" required> </label>
                     <label> country <input type="text" name="country" > </label>
                   </fieldset>
                   <fieldset>
                     <legend>additional information</legend>
-                    <label for="businessDescription">Any additional information:</label>
+                    <label >Any additional information:</label>
                     <textarea id="additionalDescription" name="text box" placeholder="special accommodations/comments such as the need and location of a drop-off request."></textarea>
                 </fieldset>
                 <input type="submit" value="make reservation">

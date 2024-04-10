@@ -82,19 +82,17 @@ main {
 .wf1 input[type="text"]:invalid, 
 .wf1 input[type="tel"]:invalid, 
 .wf1 input[type="email"]:invalid {
-	border: 1px solid red;
+	border: 2px solid red;
 }
 .wf1 input[type="text"]:valid, 
 .wf1 input[type="tel"]:valid, 
 .wf1 input[type="email"]:valid {
-	border: 1px solid green;
+	border: 3px solid green;
 }
+/*
+pattern="[0-9]+([ -]?[0-9]+)""
+*/
 
-.wf1 input[type="text"]:invalid::before, 
-.wf1 input[type="tel"]:invalid::before, 
-.wf1 input[type="email"]:invalid::before {
-	content: "❌";
-}
   
 /*----------- FORM STYLING --------------*/
 
