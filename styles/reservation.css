@@ -19,6 +19,7 @@ main {
     flex-direction: column;
     padding-bottom: 5%;
     margin-bottom: 5%;
+    font-weight: bold;
 }
  
 .wf1 fieldset {
@@ -35,11 +36,13 @@ main {
     display: block;
     font-size: large;
     padding-top: 1rem;
+    
 }
 
 .wf1 legend {
     font-size: xx-large;
     padding: 0 .5rem;
+    
 }
 
 .wf1 input[type="text"],
@@ -53,11 +56,12 @@ main {
     background-color: wheat;
     border: solid 1px gray;
     border-radius: 25px;
-    color: grey;
+    color: rgb(71, 69, 69);
     margin: 0 auto;
     max-width: 400px;
     padding: .75rem;
     width: 90%;
+    font-weight: bold;
 }
 
 

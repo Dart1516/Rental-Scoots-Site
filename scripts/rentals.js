@@ -11,33 +11,34 @@ async function getData(url) {
 
 function displayRentalsList() {
     getData(url).then(data => {
-        const rentalTypes = Object.values(data.rentalType);
-
-        rentalTypes.forEach(rental => {
+        const rentalTypes = Object.entries(data.rentalType);
+    
+        rentalTypes.forEach(([vehicleName, rental]) => { // this is for obtein the name as well the vehicle data
             const mainDiv = document.getElementById('mainDiv');
-
+    
             const section = document.createElement('section');
             section.classList.add('rental-item');
-
-            const vehicleName = document.createElement('h3');
-            vehicleName.classList.add('vehicle-name');
-            vehicleName.textContent = rental.name;
-            section.appendChild(vehicleName);
-
+    
+            const vehicleNameElement = document.createElement('h3');
+            vehicleNameElement.classList.add('vehicle-name');
+            vehicleNameElement.textContent = vehicleName;
+            section.appendChild(vehicleNameElement);
+    
             const hr = document.createElement('hr');
             section.appendChild(hr);
-
+    
             const image = document.createElement('img');
             image.classList.add('vehicle-image');
-            image.src = Object.values(rental.color)[0].imageURL; // Usar la primera imagen disponible como imagen del vehículo
+            image.src = Object.values(rental.color)[0].imageURL;
+            image.alt = vehicleName; // Usar el nombre del vehículo como atributo alt de la imagen
+            image.width='150'
+            image.height='120'
             image.loading = 'lazy';
             section.appendChild(image);
+    
 
             const colorsBox = document.createElement('div');
             colorsBox.classList.add('colors-box');
-            const colorsTitle = document.createElement('h3');
-            colorsTitle.textContent = 'Available Colors';
-            colorsBox.appendChild(colorsTitle);
             Object.entries(rental.color).forEach(([colorName, colorData]) => {
                 const colorSquare = document.createElement('div');
                 colorSquare.classList.add('color-square');
@@ -45,11 +46,6 @@ function displayRentalsList() {
 
                 // Event listener para cambiar la imagen al hacer clic en un color
                 colorSquare.addEventListener('click', () => {
-                    image.src = colorData.imageURL;
-                });
-
-                // Event listener para cambiar la imagen al pasar el mouse sobre un color
-                colorSquare.addEventListener('mouseover', () => {
                     image.src = colorData.imageURL;
                 });
 
