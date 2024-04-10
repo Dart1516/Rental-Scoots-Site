@@ -32,6 +32,7 @@ async function displayRandomVehicle() {
     document.getElementById('vehicle-image').src = randomVehicle.imageURL;
     document.getElementById('vehicle-image').alt = randomVehicle.name + ' vehicle image';
     console.log(randomVehicle.name + ' vehicle image')
+    console.log('updated')
     document.getElementById('vehicle-image').width = '150';
     document.getElementById('vehicle-image').height = '180';
     document.getElementById('vehicle-description').textContent = randomVehicle.description;
