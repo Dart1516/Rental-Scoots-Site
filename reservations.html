@@ -61,11 +61,16 @@
                         </label>
                         
                     </div>
-                    <div>
-                        <label >Select the reservation type</label>
-                        <label><input type="radio" name="reservation" value="halfDay" id="halfDay"> Half Day</label>
-                        <label><input type="radio" name="reservation" value="fullDay" id="fullDay"> Full Day</label>
-                        <label >Date of reservation <input type="date" name="completeDate" id="calendar"></label>
+                    <div>Select the reservation type
+                        <label for="halfDay">
+                            <input type="radio" name="reservation" value="halfDay" id="halfDay"> Half Day
+                        </label>
+                        <label for="fullDay">
+                            <input type="radio" name="reservation" value="fullDay" id="fullDay"> Full Day
+                        </label>
+                        <label >Date of reservation 
+                            <input type="date" name="completeDate" id="calendar">
+                        </label>
                         <label >How many days
                             <select name="quantity-days" id="quantityDays">
                                 <option value="">Please Select &#9662;</option>
@@ -94,8 +99,9 @@
                   </fieldset>
                   <fieldset>
                     <legend>additional information</legend>
-                    <label >Any additional information:</label>
-                    <textarea id="additionalDescription" name="text box" placeholder="special accommodations/comments such as the need and location of a drop-off request."></textarea>
+                    <label >Any additional information:
+                        <textarea id="additionalDescription" name="text box" placeholder="special accommodations/comments such as the need and location of a drop-off request."></textarea>
+                    </label>
                 </fieldset>
                 <input type="submit" value="make reservation">
                 </form>
