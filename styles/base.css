@@ -20,6 +20,7 @@ Purple #524262
 body {
     background-color: #f9ecdc;
     color: #1b2a49;
+    text-align: center;
 }
 /* End of main code  */
 
@@ -152,28 +153,27 @@ background-color: #a38288;
 }
 
 /* End of Dark Mode Button */
-
-footer{
+footer {
     background-color: #93cadf;
     color: black;
     font-weight: 100;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Cambiado a 1fr */
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     justify-content: space-between;
     padding: 20px;
     text-align: center;
-    
+    align-items: center; /* Alinea verticalmente el contenido */
 }
-footer div p a{
+
+footer div p a {
     text-decoration: none; 
     color: black;
-    transition: color 0.3s; /* Transición suave para el cambio de color del texto */
+    transition: color 0.3s;
     font-weight: bolder;
 }
 
-
 .footer-column {
-    margin-right: 20px; /* Ajusta el espacio entre las columnas */
+    margin-right: 20px;
 }
 
 .footer-column p {
@@ -181,13 +181,12 @@ footer div p a{
     margin-bottom: 10px;
 }
 
-
-
 .footer-column img {
-    width: 10%; /* Ajusta el tamaño de los íconos de las redes sociales */
+    width: 10%;
     height: auto;
-    margin-right: 10px; /* Ajusta el espacio entre los íconos de las redes sociales */
+    margin-right: 10px;
 }
+
 /* Estilos para el header */
 header {
     display: flex;

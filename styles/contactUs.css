@@ -1,3 +1,13 @@
+*{
+   border: green solid;
+}
+
+.grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+   text-align: center;
+}
+
 :root{
     --gryfindorcolor:#a6332e	;
     --Hufflepuff:#efbc2f;
@@ -38,14 +48,11 @@
  
  .wf1 label{
      display: block; /*This will organized*/
-     padding-top: 1rem;
  
      font-size: .9rem;
  }
  .wf1 div{
-     padding-top: 1rem;
      font-size: .9rem;
-     
  }
  
  /*now to specific*/
@@ -79,7 +86,7 @@
     border-radius: 5px;
     padding: 12px 24px;
     cursor: pointer;
-    margin-top: -10px;
+    margin-bottom: 5%;
     color: #FFFFFF;
   }
   .wf1 input[type="submit"]:hover{
@@ -94,4 +101,9 @@
      border: solid 2.5px green;
   }
  
- 
+ /*-------------------maps-----------*/
+ iframe{
+   border-radius: 25px;
+   border: solid 20px red;
+ }
+ /*-------------------maps-----------*/

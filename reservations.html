@@ -35,91 +35,102 @@
         </ul>
     </nav>
     <main >
-
-        <div class="form to select a vehicle"> izquierda
+        <section>
             <h2>Make your request</h2>
+            <div class="form to select a vehicle"> 
+                <hr>
+                <form method="get" action="thankyou.html" class="wf1">
+                <fieldset>
+                    <legend> Vehicle Select </legend>
+                    <div>
+                        <label for="vehicle">Vehicle model
+                            <select name="vehicle-description" id="vehicle-description">
+                                <option value="">Please Select &#9662;</option>
+                                <option value="hondaDioScooter">Honda Dio 110cc Black &#9662;</option>
+                                <option value="hondaMetroScooter">Honda Metropolitan 49cc Green</option>
+                                <option value="hondaPCX150Scooter">Honda Pcx150 149cc White</option>
+                                <option value="hondaPioneerATV">Honda Pioneer Blue</option>
+                                <option value="jeepWrangler2Door">Jeep Wrangler 2 doors Blue</option>
+                                <option value="jeepWrangler4DoorAC">Jeep Wrangler 4 Blue</option>
+    
+                            </select>
+                        </label>
+                        
+                    </div>
+                    <div>
+                        <label for="reservation">Select the reservation type</label>
+                        <input type="radio" name="reservation" value="halfDay" id="halfDay"> Half Day
+                        <input type="radio" name="reservation" value="fullDay" id="fullDay"> Full Day
+                        <label for="calendar">Date of reservation <input type="date" name="completeDate" id="reservationDate"></label>
+                        <label for="period">How many days
+                            <select name="quantity-days" id="quantityDays">
+                                <option value="">Please Select &#9662;</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="cruise">Mention the color and the Cruise Line if applicable
+                            <textarea id="cruise-line" name="text box" placeholder="Color Blue and cruise line."></textarea>
+                        </label>
+                    </div>
+                    
+                  </fieldset>
+    
+                  <fieldset>
+                    <legend>User Information</legend>
+                    <label> Full Name* <input type="text" class="fullName" autocomplete="fname" name="name" required pattern="[A-Za-z]*"/> </label>
+                    <label> Phone* <input type="tel" class="phone" name="phone" placeholder="123456789 " required pattern="[0-9]+([ -]?[0-9]+)*"/> </label>
+                    <label> Email* <input type="email" class="email" name="email" placeholder="someEmail@something.com" required/> </label>
+                    <label> country <input type="country" name="country" placeholder="Your country" /> </label>
+                  </fieldset>
+                  <fieldset>
+                    <legend>additional information</legend>
+                    <label for="businessDescription">Any additional information:</label>
+                    <textarea id="additionalDescription" name="text box" placeholder="special accommodations/comments such as the need and location of a drop-off request."></textarea>
+                </fieldset>
+                <input type="submit" value="make reservation">
+                </form>
+            </div>
+        </section>
+        <section>
+            <h2> Preview</h2>
             <hr>
-            <form method="get" action
-            ="thanks.html" class="wf1">
-              <fieldset>
-                <legend> Vehicle Select </legend>
-                <div>
-                    <label for="vehicle">Vehicle model
-                        <select name="vehicle-description" id="vehicle-description">
-                            <option value="">Please Select &#9662;</option>
-                            <option id="vehicle1" value="hondaDioScooter">Honda Dio 110cc Green &#9662;</option>
-                            <option id="vehicle2" value="hondaDioScooter">Honda Dio 110cc Blue</option>
-                            <option id="vehicle3" value="hondaMetroScooter">Honda Metropolitan 49cc Black</option>
-                            <option id="vehicle4" value="hondaMetroScooter">Honda Metropolitan 49cc Red</option>
-                            <option id="vehicle5" value="hondaPCX150Scooter">Honda Pcx150 149cc White</option>
-                            <option id="vehicle6" value="hondaPCX150Scooter">Honda Pcx150 149cc Black</option>
-                            <option id="vehicle7" value="hondaPioneerATV">Honda Pioneer Blue</option>
-                            <option id="vehicle8" value="hondaPioneerATV">Honda Pioneer Red</option>
-                            <option id="vehicle9" value="jeepWrangler2Door">Jeep Wrangler 2 doors Blue</option>
-                            <option id="vehicle10" value="jeepWrangler2Door">Jeep Wrangler 2 doors Cyan</option>
-                            <option id="vehicle11" value="jeepWrangler4DoorAC">Jeep Wrangler 4 Yellow</option>
-                            <option id="vehicle12" value="jeepWrangler4DoorAC">Jeep Wrangler 4 Cyan</option>
-                        </select>
-                    </label>
-                </div>
-                <div>
-                    <label for="reservation">Select the reservation type</label>
-                    <input type="radio" name="reservation" value="halfDay" id="halfDay"> Half Day
-                    <input type="radio" name="reservation" value="fullDay" id="fullDay"> Full Day
-                    <label for="calendar">Date of reservation <input type="date" name="completeDate" id="reservationDate"></label>
-                    <label for="period">How many days
-                        <select name="quantity-days" id="quantityDays">
-                            <option value="">Please Select &#9662;</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select>
-                    </label>
-                </div>
-                <div>
-                    <label for="cruise">cruise line if applicable
-                        <textarea id="cruise line" name="text box" placeholder="cruise line."></textarea>
-                    </label>
-                </div>
-                
-              </fieldset>
 
-              <fieldset>
-                <legend>User Information</legend>
-                <label> Full Name* <input type="text" autocomplete="fname" name="name" id="firstName" required /> </label>
-                <label> Phone <input type="tel" name="phone" placeholder="123456789" /> </label>
-                <label> Email* <input type="email" name="email" placeholder="someEmail@something.com" /> </label>
-                <label> country <input type="country" name="country" placeholder="Your country" /> </label>
-              </fieldset>
-              <fieldset>
-                <legend>additional information</legend>
-                <label for="businessDescription">Describe your issue question our doubt:</label>
-                <textarea id="businessDescription" name="text box" placeholder="special accommodations/comments such as the need and location of a drop-off request."></textarea>
-            </fieldset>
-            <input type="submit" value="make reservation">
-        </form>
-        </div>
-        <div id="vehicle-info">
-        </div>
-        <div id="rental-contract">
-            <h2>Rental Agreement</h2>
-            <p>By renting a vehicle from Cozumel Rental Scoots, you agree to the following terms and conditions:</p>
-            <ol>
-                <li>The renter must be at least 18 years old.</li>
-                <li>Payment must be made in full before vehicle pickup.</li>
-                <li>The vehicle must be returned in the same condition as it was rented.</li>
-                <li>Any damages to the vehicle must be reported immediately.</li>
-                <li>No refunds will be issued if the rental period is shortened.</li>
-                <li>In the event of a zombie apocalypse during the rental period, a $20 refund will be issued if the vehicle is returned immediately.</li>
-                <li>The renter agrees not to use the vehicle for off-road racing or any illegal activities.</li>
-                <li>If the vehicle is lost due to being swallowed by a sea monster, the renter is responsible for the replacement cost.</li>
-                <li>The renter must wear a pirate hat while operating the vehicle on Tuesdays.</li>
-                <li>If the vehicle is found decorated with fairy lights upon return, a $10 discount will be applied to the rental fee.</li>
-                <li>The renter agrees to participate in a mandatory dance-off upon returning the vehicle.</li>
-            </ol>
-        </div>
+            <div id="vehicle-info">
+            </div>
+            <div id="rental-contract">
+                <h2>Rental Agreement</h2>
+                <p>By renting a vehicle from Cozumel Rental Scoots, you agree to the following terms and conditions:</p>
+                <ol>
+                    <li>The renter must be at least 18 years old.</li>
+                    <li>Payment must be made in full before vehicle pickup.</li>
+                    <li>The vehicle must be returned in the same condition as it was rented.</li>
+                    <li>Any damages to the vehicle must be reported immediately.</li>
+                    <li>No refunds will be issued if the rental period is shortened.</li>
+                    <li>In the event of a zombie apocalypse during the rental period, a $20 refund will be issued if the vehicle is returned immediately.</li>
+                    <li>The renter agrees not to use the vehicle for off-road racing or any illegal activities.</li>
+                    <li>If the vehicle is lost due to being swallowed by a sea monster, the renter is responsible for the replacement cost.</li>
+                    <li>The renter must wear a pirate hat while operating the vehicle on Tuesdays.</li>
+                    <li>If the vehicle is found decorated with fairy lights upon return, a $10 discount will be applied to the rental fee.</li>
+                    <li>The renter agrees to participate in a mandatory dance-off upon returning the vehicle.</li>
+                    <li>The renter agrees to maintain proper hygiene standards while inside the vehicle. Failure to do so may result in a mandatory sail through the car wash.</li>
+                    <li>In the event of encountering a leprechaun during the rental period, the renter agrees to share any found pots of gold with the Company.</li>
+                    <li>The vehicle must not be used for transporting mythical creatures, including but not limited to dragons, unicorns, or Bigfoot.</li>
+                    <li>The renter agrees to sing sea shanties at the top of their lungs while driving the vehicle, especially when passing by other sailors or landlubbers.</li>
+                    <li>If the vehicle becomes stranded on a desert island, the renter agrees to remain calm and resourceful until rescued, utilizing only the supplies provided in the vehicle.</li>
+                    <li>If the vehicle is transformed into a pumpkin at midnight, the renter is responsible for locating a suitable replacement mode of transportation.</li>
+                    <li>The renter agrees to protect the vehicle from curses, hexes, and other supernatural phenomena by carrying a vial of holy water and a silver dagger at all times.</li>
+                    <li>If the vehicle is used to rescue a damsel in distress, the renter will be hailed as a hero and granted a free rental upgrade on their next adventure.</li>
+                </ol>
+            </div>
+        </section>
+        
+        
     </main>
     <footer>
         <div class="footer-column">

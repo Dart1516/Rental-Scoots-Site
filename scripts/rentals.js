@@ -30,8 +30,6 @@ function displayRentalsList() {
             const image = document.createElement('img');
             image.classList.add('vehicle-image');
             image.src = Object.values(rental.color)[0].imageURL; // Usar la primera imagen disponible como imagen del vehículo
-            const colorNames = Object.keys(rental.color).join(', ');
-            image.alt = `Vehicle Image - Available Colors: ${colorNames}`;
             image.loading = 'lazy';
             section.appendChild(image);
 
