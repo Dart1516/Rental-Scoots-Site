@@ -16,15 +16,31 @@ Sand #a38288
 Purple #524262
 */
 
-/* Start of main code*/
+/* ----- Start of main code -----*/
 body {
     background-color: #f9ecdc;
     color: #1b2a49;
     text-align: center;
 }
-/* End of main code  */
+/* ----- End of main code  ----- */
 
-/* things that affect both, mobile and desktop view */
+/* ----- Header -----*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos para el navbar-header */
+.navbar-header {
+    display: flex;
+    align-items: center; /* Alinea los elementos verticalmente */
+}
+/* ----- End of Header -----*/
+
+
+
+/* ----- things that affect both, mobile and desktop view ----- */
 #mobile-menu { /* to hide the borders and a space that appear*/
     border: none;
     padding: 0;
@@ -46,7 +62,7 @@ body {
     background-color: #93cadf;
     
     border-style: solid;  
-    border-radius: 20px; /* Ajusta según sea necesario */
+    border-radius: 20px; 
     padding: 20px;
 }
 .navigation-menu-bar li a {
@@ -64,9 +80,9 @@ body {
     color: #a38288; /* text hover */
 }
 
-/* things that affect both, mobile and desktop view */
+/* ----- things that affect both, mobile and desktop view-----  */
 
-/*desktop view*/
+/* ----- desktop view ----- */
 .home-logo {
     width: 50%;
     height: auto;
@@ -89,8 +105,8 @@ body {
 .menu-option-logo {
     font-size: 0; /* Hace que el texto sea invisible */
 }
+/* ----- END desktop view ----- */
 
-/* End of Hamburger Menu button */
 
 /* Start of Dark Mode Button */
 #dark-mode-button {
@@ -125,7 +141,6 @@ color: black;
 background-color: #a38288;
 }
 
-
 .dark-mode .navigation-menu-bar li {
     flex: 1;
     text-align: center;
@@ -152,7 +167,10 @@ background-color: #a38288;
     background-color: #a38288 ;
 }
 
-/* End of Dark Mode Button */
+/* ----- End of Dark Mode Button -----*/
+
+/* ----- Footer -----*/
+
 footer {
     background-color: #93cadf;
     color: black;
@@ -186,19 +204,8 @@ footer div p a {
     height: auto;
     margin-right: 10px;
 }
+/* ----- End of Footer -----*/
 
-/* Estilos para el header */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Estilos para el navbar-header */
-.navbar-header {
-    display: flex;
-    align-items: center; /* Alinea los elementos verticalmente */
-}
 
 
 @media screen and (max-width: 768px) {
