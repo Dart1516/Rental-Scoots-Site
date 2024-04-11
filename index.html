@@ -21,8 +21,10 @@
     <title>Scoots Home </title>
 </head>
 <body>
-    <div class="high-temperature-message"></div>
-    <!--This is for not giving an error message on accessibility-->
+    <div class="high-temperature-message">
+    </div>
+    <!--This is for not giving an error message on accessibility
+-->
     <h1 style="display: none"> Scoots Home</h1>
     <header>
         <div>     
@@ -32,8 +34,7 @@
             <button id="mobile-menu" aria-label="This button is to open and close the menu on mobile view"></button>
         </div>
     </header>
-    <nav>
-        
+    <nav>  
         <ul class="navigation-menu-bar">
             <li> <a class="menu-option-name" href="rentals.html">Rentals</a></li>
             <li> <a class="menu-option-name" href="reservations.html">Reservations</a></li>
@@ -45,7 +46,7 @@
     </nav>
     <main>
         <div class="banner-container">
-            <div class="bannerContent">
+            <div class="left-banner-content">
                 <h2>Come and take an incredible tour</h2>
                 <p> with our scoots you'll have time to visit all the island in a practical manner</p>
                 <button onclick="window.location.href='reservations.html'">Make a Reservation</button>
@@ -83,7 +84,7 @@
                   </picture>
             </div>
         </div>
-        <section class="additional-cards">
+        <section class="card-container">
             <div class="card">
                 <h2>Today's Vehicle</h2>
                 <hr >
@@ -100,17 +101,17 @@
                         <div class="currentTimeAndWeatherType">
                             <div>
                                 <img id="weather-icon" src="images/logos/button-night.webp" alt="image current day">
-                                <div class="celciusRight">
+                                <div class="current-degree-text">
                                     <div>
-                                        <div class="celcius" id="current-temp"></div>
+                                        <div id="current-temp"></div>
                                     </div>
                                 </div>
-                                <div class="anotherWeatherInfo">
+                                <div >
                                     <div id="weather-description"></div>
                                     <div id="weather-details"></div>
                                 </div>
                             </div>
-                            <div class="currentTimeAndWeatherType2">
+                            <div >
         
                                 <div id="weather-time"></div>
                                 <div id="weather-location"></div>
@@ -119,7 +120,7 @@
                     </div>
                 </div>
                 <div><!-- next 3 days -->
-                    <div class="forecastInline" id="day1">
+                    <div class="forecast" id="day1">
                         <div ></div>at 15:00
                         <img id="img_1" src="images/logos/button-night.webp" alt="image first day">
                         
@@ -130,7 +131,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="forecastInline" id="day2">
+                    <div class="forecast" id="day2">
                         <div ></div> at 15:00
                         <img id="img_2" src="images/logos/button-night.webp" alt="image second day">
                         <div>
@@ -140,7 +141,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="forecastInline" id="day3">
+                    <div class="forecast" id="day3">
                         <div ></div> at 15:00
                         <img id="img_3" src="images/logos/button-night.webp" alt="image third day">
                         <div>
