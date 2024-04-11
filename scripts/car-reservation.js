@@ -33,7 +33,7 @@ document.getElementById('vehicle-description').addEventListener('change', async 
             // Display vehicle information
             const vehicleInfo = document.getElementById('vehicle-info');
             vehicleInfo.innerHTML = `
-                <img src="${selectedVehicle.color[colorKey].imageURL}" alt="${selectedVehicleId}">
+                <img src="${selectedVehicle.color[colorKey].imageURL}" alt="${selectedVehicleId} width="auto" height="auto">
                 <p>${selectedVehicle.description}</p>
                 <div class="parrafos">
                 <h4>Max Persons:</h4>
