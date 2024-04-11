@@ -7,7 +7,7 @@
     max-width: 600px;
     margin: 5% ;
     font-family: 'Old Standard TT', serif; /* Use an appropriate font for a parchment look */
-
+    
 }
 
 #rental-contract h2 {
@@ -36,3 +36,7 @@
     border: 2px solid  #E6CE9A; /* Brown border color */
     color: #FAE66E;
 }
+*{
+  border: green solid;
+}
+
