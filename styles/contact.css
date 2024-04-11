@@ -1,106 +1,96 @@
-
 .grid {
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
    text-align: center;
 }
 
-:root{
-    --gryfindorcolor:#a6332e	;
-    --Hufflepuff:#efbc2f;
-    --Ravenclaw:#3c4e91	;
-    --Slytherin:#366447	;
- }
- 
- .wf1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
- }
- 
- 
- fieldset {
-    
-    text-align: center;
-    margin-bottom: 20px; 
- }
- 
- input[type="range"] {
-    width: 480px;
-    margin: 0 auto; 
- }
- 
- .wf1 fieldset{
-     margin: 2rem 0 ;
-     border-radius: 6px;
-     padding: 2rem  2rem ;
-     border-width: 10px; 
-     border-image: linear-gradient(to top, var(--gryfindorcolor), var(--Slytherin)) 90;
- }
- 
- .wf1 legend{
-     padding: 0 .5rem ;
- }
- 
- .wf1 label{
-     display: block; /*This will organized*/
- 
-     font-size: .9rem;
- }
- .wf1 div{
-     font-size: .9rem;
- }
- 
- /*now to specific*/
- .wf1 input[type="text"],
- .wf1 input[type="password"],
- .wf1 input[type="email"],
- .wf1 input[type="tel"],
- .wf1 textarea
-  {
-    background-color: wheat;
-    display: block;
-    border-radius: 25px;
-    padding: .75rem;
-    width: 90%; 
-    max-width: 400px;
-    appearance: none;
-    margin: 0 auto; 
-  }
- 
-  .wf1 input[type="submit"]{
-    display: inline-block;
-    line-height: 1;
-    font-size: 1rem;
-    font-weight: bolder;
-    text-align: center;
-    transition: all .3s;
-    text-transform: uppercase;
-    letter-spacing: 1.4px;
-    background-color: rgb(189, 85, 85);
-    border: none;
-    border-radius: 5px;
-    padding: 12px 24px;
-    cursor: pointer;
-    margin-bottom: 5%;
-    color: #FFFFFF;
-  }
-  .wf1 input[type="submit"]:hover{
-    color: #FFFFFF;
-    background-color: #3D93AA;
-  }
-  
-  .wf1 input:required{
-     border: solid 2.5px red;
-  }
-  .wf1 input:required:valid{
-     border: solid 2.5px green;
-  }
- 
- /*-------------------maps-----------*/
- iframe{
+:root {
+   --Hufflepuff: #efbc2f;
+   --Ravenclaw: #3c4e91;
+   --Slytherin: #366447;
+   --gryfindorcolor: #a6332e;
+}
+
+.form-contact-us {
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   margin: 0;
+}
+
+.form-contact-us fieldset {
+   border-image: linear-gradient(to top, var(--gryfindorcolor), var(--Slytherin)) 90;
+   border-radius: 6px;
+   border-width: 10px;
+   margin: 2rem 0;
+   padding: 2rem;
+}
+
+.form-contact-us input[type="text"],
+.form-contact-us input[type="password"],
+.form-contact-us input[type="email"],
+.form-contact-us input[type="tel"],
+.form-contact-us textarea {
+   appearance: none;
+   background-color: wheat;
    border-radius: 25px;
+   display: block;
+   margin: 0 auto;
+   max-width: 400px;
+   padding: .75rem;
+   width: 90%;
+}
+
+.form-contact-us input[type="submit"] {
+   background-color: rgb(189, 85, 85);
+   border: none;
+   border-radius: 5px;
+   color: #FFFFFF;
+   cursor: pointer;
+   display: inline-block;
+   font-size: 1rem;
+   font-weight: bolder;
+   letter-spacing: 1.4px;
+   line-height: 1;
+   margin-bottom: 5%;
+   padding: 12px 24px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: all .3s;
+}
+
+.form-contact-us input[type="submit"]:hover {
+   background-color: #3D93AA;
+}
+
+.form-contact-us input:required {
+   border: solid 2.5px red;
+}
+
+.form-contact-us input:required:valid {
+   border-color: green;
+}
+
+.form-contact-us label,
+.form-contact-us div {
+   font-size: .9rem;
+}
+
+.form-contact-us legend {
+   padding: 0 .5rem;
+}
+
+fieldset {
+   margin-bottom: 20px;
+   text-align: center;
+}
+
+input[type="range"] {
+   margin: 0 auto;
+   width: 480px;
+}
+
+iframe {
    border: solid 20px red;
- }
- /*-------------------maps-----------*/
+   border-radius: 25px;
+}
