@@ -1,42 +1,42 @@
-#rental-contract {
+#rental-agreement {
     background-size: cover;
     padding: 20px;
     border: 2px solid #8B4513; /* Brown border color */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
     max-width: 600px;
-    margin: 5% ;
-    font-family: 'Old Standard TT', serif; /* Use an appropriate font for a parchment look */
-    
+    margin: 0 auto;
+    font-family: 'Old Standard TT', serif; /* Use an appropriate font for a parchment look */ 
 }
 
-#rental-contract h2 {
+#rental-agreement h2 {
     text-align: center;
     font-size: 24px;
     margin-bottom: 20px;
     text-decoration: underline;
 }
 
-#rental-contract p {
+#rental-agreement p {
     margin-bottom: 10px;
 }
 
-#rental-contract ol {
+#rental-agreement ol {
     padding-left: 20px;
     list-style-type: decimal;
 }
 
-#rental-contract li {
+#rental-agreement li {
     margin-bottom: 10px;
 }
 .dark-mode #vehicle-info {
     color: #1b2a49;
 }
-.dark-mode #rental-contract {
+.dark-mode #rental-agreement {
     border: 2px solid  #E6CE9A; /* Brown border color */
     color: #FAE66E;
 }
+/*
 *{
   border: green solid;
-}
+}*/
 

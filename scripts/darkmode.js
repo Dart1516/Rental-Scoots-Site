@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const ButtonImage = document.getElementById("dark-mode-button");
-    const ButtonImage2 = document.getElementById("dark-mode-button2");
+    const ButtonImage2 = document.getElementById("dark-mode-button-for-mobile");
     let imagenActual = 1;
 
     // This will load the "dark mode" if it was selected before
