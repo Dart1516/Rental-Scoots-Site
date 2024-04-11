@@ -1,21 +1,3 @@
-
-
-/*
-Colors to be used during the day:
-Red #ab410d
-Orange #dcab5e
-Sand #f9ecdc
-Light Blue #93cadf
-Blue #4bafc9
-
-Colors to be used during the night:
-Darkest Blue #1b2a49
-Dark Blue #465881
-Blue #00909e
-Sand #a38288
-Purple #524262
-*/
-
 /* ----- Start of main code -----*/
 body {
     background-color: #f9ecdc;
@@ -70,6 +52,7 @@ header {
     font-weight: 700;
     text-decoration: none; /* Quita la subrayado del enlace */
     transition: color 0.3s; /* Transición suave para el cambio de color del texto */
+    
 }
 
 .navigation-menu-bar li:hover { /* hover of navigation */
@@ -78,6 +61,7 @@ header {
 
 .navigation-menu-bar li a:hover {
     color: #a38288; /* text hover */
+
 }
 
 /* ----- things that affect both, mobile and desktop view-----  */
@@ -108,6 +92,23 @@ header {
 /* ----- END desktop view ----- */
 
 
+
+/*
+Colors to be used during the day:
+Red #ab410d
+Orange #dcab5e
+Sand #f9ecdc
+Light Blue #93cadf
+Blue #4bafc9
+
+Colors to be used during the night:
+BACKGROUND 465881 DARKBLUE
+other background  3D3A33 
+lETRAS FAE687 YELLOW
+border #E6AB27
+*/
+
+
 /* Start of Dark Mode Button */
 #dark-mode-button {
     width: 40%;
@@ -119,7 +120,7 @@ header {
 
 .dark-mode {
     background-color: #465881;
-    color: #a38288;
+    color: #FAE687;
 }
 
 .dark-mode #dark-mode-button {
@@ -129,46 +130,47 @@ header {
     max-height: 100%;
     margin: -20%;
 }
-.dark-mode #dark-mode-button {
-color: black;
-}
-
-.dark-mode #dark-mode-button {
-color: black;
-
-}
-.dark-mode .navigation-menu-bar li {
-background-color: #a38288;
-}
 
 .dark-mode .navigation-menu-bar li {
     flex: 1;
     text-align: center;
     padding: 10px;
-    background-color: #a38288;
     transition: background-color 0.3s; /* Transición suave para el cambio de color */
+    color: #1b2a49;
 }
 
-.dark-mode .navigation-menu-bar li:hover {
-    background-color: #00909e; /* Cambio de color al pasar el mouse */
-}
 
-.dark-mode .navigation-menu-bar li a {
-    color: white;
-    text-decoration: none; /* Quita la subrayado del enlace */
-    transition: color 0.3s; /* Transición suave para el cambio de color del texto */
-}
-
-.dark-mode .navigation-menu-bar li a:hover {
-    color: #a38288; /* Cambio de color del texto al pasar el mouse */
-}
 .dark-mode footer {
-    color: white; 
-    background-color: #a38288 ;
+    color: #E6A725; 
+    background-color: #3D3A33 ;
+}
+.dark-mode .card {
+    border-color: #E6AB27;
 }
 
 /* ----- End of Dark Mode Button -----*/
 
+/*---- button ----*/
+
+button {
+    display: inline-block;
+    line-height: 1;
+    transition: all .3s;
+    background-color: rgb(189, 85, 85);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: -10px;
+    color: #FFFFFF;
+    font-size: large;
+    text-transform: uppercase;
+    margin: 5%;
+}
+button:hover{
+    color: #FFFFFF;
+    background-color: #3D93AA;
+  }
+/*---- button ----*/
 /* ----- Footer -----*/
 
 footer {
@@ -185,9 +187,10 @@ footer {
 
 footer div p a {
     text-decoration: none; 
-    color: black;
     transition: color 0.3s;
     font-weight: bolder;
+    color: inherit;
+
 }
 
 .footer-column {
@@ -243,6 +246,50 @@ footer div p a {
         content: "☰";
         color: black;
     }
+    .navigation-menu-bar { /*navigation bar color*/
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.navigation-menu-bar li {
+    background-color: inherit; 
+    text-decoration: none; /* Quita la subrayado del enlace */
+    border: inherit;
+}
+
+.navigation-menu-bar li:hover { /* hover of navigation */
+    background-color: inherit; 
+}
+
+.navigation-menu-bar li a:hover {
+    color:inherit; /* text hover */
+
+}
+
+
+.navigation-menu-bar li a {
+    color: black;
+    font-weight: 700;
+    text-decoration: none; /* Quita la subrayado del enlace */
+    transition: color 0.3s; /* Transición suave para el cambio de color del texto */
+    font-size: x-large;
+    background-color: #93cadf;
+    border-style: solid;  
+    border-radius: 20px; 
+    padding: 20px;
+    display: inline-block;
+    width: 80%;
+    
+}
+
+.navigation-menu-bar li:hover a{ /* hover of navigation */
+    background-color: #00909e; 
+}
 
     /*hide the desktop menu on mobile*/
     .navigation-menu-bar {
